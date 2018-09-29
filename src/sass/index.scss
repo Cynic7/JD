@@ -13,6 +13,7 @@ html,body,h1,h2,h3,h4,ul,li,div,p,ol,figure,section,aside,header,article,footer{
     white-space: nowrap;
     text-overflow: ellipsis;}
 
+.jiantou{font-size: 20px;    line-height: 40px; color: hsla(0,0%,100%,.4);margin-left: -5px;}
 
 //字体图标
 @font-face{font-family:iconfont;
@@ -59,3 +60,6 @@ url(../fonts/iconfont.svg) format("svg")}
 
 //生活百货！
 @import "baiHuo";
+
+//寻宝！
+@import "xunBao";

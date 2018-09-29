@@ -43,7 +43,7 @@
 
 //通用左右按钮
 .goback,.gonext{background: rgba(0,0,0,0.2); border: 0; outline: 0;width: 20px; height: 40px; position: absolute; 
-    top: 45%; cursor: pointer;z-index: 2;}
+    top: 45%; cursor: pointer;z-index: 2; &:hover{background: #000; opacity: 0.5;} }
 .gonext{
      right: 0;
 }

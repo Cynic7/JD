@@ -36,6 +36,13 @@ html, body, h1, h2, h3, h4, ul, li, div, p, ol, figure, section, aside, header, 
   text-overflow: ellipsis;
 }
 
+.jiantou {
+  font-size: 20px;
+  line-height: 40px;
+  color: rgba(255, 255, 255, 0.4);
+  margin-left: -5px;
+}
+
 @font-face {
   font-family: iconfont;
   src: url(../fonts/iconfont.eot?#iefix) format("embedded-opentype"), url(../fonts/iconfont.woff) format("woff"), url(../fonts/iconfont.ttf) format("truetype"), url(../fonts/iconfont.svg) format("svg");
@@ -451,6 +458,10 @@ nav .treasure {
   top: 45%;
   cursor: pointer;
   z-index: 2;
+}
+.goback:hover, .gonext:hover {
+  background: #000;
+  opacity: 0.5;
 }
 
 .gonext {
@@ -1202,6 +1213,64 @@ nav .treasure {
 #wuTu .box_bd .top {
   width: 350px;
   height: 226px;
+}
+
+.xunBao .wrap {
+  height: 520px;
+}
+
+.xunBao_box {
+  overflow: hidden;
+  width: 390px;
+  height: 240px;
+  margin: 0 10px 10px 0;
+  background: #fff;
+  float: left;
+  position: relative;
+}
+.xunBao_box figure {
+  filter: blur(3px);
+}
+.xunBao_box .mask {
+  content: "";
+  position: absolute;
+  width: 390px;
+  height: 100px;
+  background: #000;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+}
+.xunBao_box h4 {
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  z-index: 20;
+  top: 39px;
+  width: 100%;
+}
+.xunBao_box h4 span {
+  font-weight: normal;
+}
+.xunBao_box ul {
+  display: block;
+  width: 360px;
+  height: 110px;
+  margin: 10px auto 0;
+}
+.xunBao_box ul li {
+  float: left;
+  margin: 0 5px;
+}
+.xunBao_box:last-of-type {
+  margin: 0px;
+}
+.xunBao_box img {
+  transition: all 0.5s;
+}
+.xunBao_box img:hover {
+  opacity: 0.8;
 }
 
 /*# sourceMappingURL=index.css.map */

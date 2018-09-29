@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+//设置页面中广泛运用的样式
+li{list-style: none;}
+html,body {height:100%; overflow-x: hidden;}
+body {color: #333;background:#f0f3ef;
+       font: 12px/1.5 Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\\5b8b\4f53,sans-serif;}
+img{display: block;}
+a {text-decoration:none;}
+a:hover {color:#c81623;}
+html,body,h1,h2,h3,h4,ul,li,div,p,ol,figure,section,aside,header,article,footer{margin: 0; padding: 0;}
+.elip{overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;}
+
+
+//字体图标
+@font-face{font-family:iconfont;
+src:url(../fonts/iconfont.eot?#iefix) format("embedded-opentype"),
+url(../fonts/iconfont.woff) format("woff"),
+url(../fonts/iconfont.ttf) format("truetype"),
+url(../fonts/iconfont.svg) format("svg")}
+
+@font-face{font-family:impact;src:url(../fonts/impact.eot);src:url(../fonts/impact.eot?#iefix) format("embedded-opentype"),url(../fonts/impact.woff) format("woff"),url(../fonts/impact.ttf) format("truetype"),url(../fonts/impact.svg) format("svg");font-weight:400;font-style:normal}
+
+.iconfont {
+    font-family: iconfont;
+    font-style: normal;
+    -webkit-text-stroke-width: .2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon_price {
+    font-family: 'impact', sans-serif;
+    display: block;
+    height: 38px;
+    line-height: 38px;
+}
+
+//浮动清除类
+.clear:after{content: '';display: block;clear: both; width: 0;height: 0; overflow: hidden;}
+
+//头部
+@import "header";
+
+//侧边栏
+@import "aside";
+
+//轮播图块
+@import "firstFloor";
+
+//秒杀区
+@import "seckill";
+
+//第二层
+@import "secondFloor";
+
+//智能先锋！
+@import "zhiNeng";
+
+//生活百货！
+@import "baiHuo";

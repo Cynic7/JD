@@ -1,0 +1,47 @@
+@charset "utf-8";
+@import "mixin";
+.sk .wrap{@include boxM(1190,275,16);}
+
+//秒杀头部 倒计时
+.sk_header {
+    background: #e83632;color: white;text-align: center;float: left;
+    @include boxP(190,233,42);
+    h2{
+        font-size: 34px; font-weight: normal;
+    }
+    h3{
+        font-size: 20px; opacity: 0.5;
+    }
+    i{
+        background: url("https://misc.360buyimg.com/mtd/pc/index_2017/2.1.0/static/images/sprite.seckill.png") -35px -25px;
+        @include boxM(20,33,15);
+    }
+    .timer{
+        @include boxM(135,0,16);
+        div{
+            width: 40px; height: 40px;background: #2f3430; float: left; margin-left: 4px;
+            line-height: 40px;font-weight: bold;font-size: 20px;
+        }
+    }
+}
+
+//秒杀项目列表
+.sk_body {float: left; margin-bottom:30px;position: relative;
+     .sk_item{width: 200px;height: 275px; background: #FFFFFF; position: relative; overflow: hidden; float: left;
+         a{height: 100%;display: block;
+            &:hover img{opacity: 0.9;}
+            &:hover p{color:#c81623;;}
+         }
+         img {margin: 0 auto 15px; padding-top: 35px;}
+         &:after{content: '';display: block;position: absolute;top: 0;right: 0;width: 1px;height: 275px;background: #f0f0f0;}
+         p{text-overflow: ellipsis;overflow: hidden;white-space: nowrap;    padding: 0 15px; color: #666;font-size: 12px; text-align: center;}
+         .price{@include boxM(160,20,20); border: 1px #e6382f solid; line-height: 20px;font-size: 14px; text-align:center;}
+         .price span{display: block; background: #e6382f; color: #fff; width: 50%; float: left;font-weight: bold;}
+         .price s{ color: #b7bcb8;font-size: 12px; }
+     }
+}
+.sk_last { float: left; background:#fff;
+         @include boxP(180,267.5,7.5,10);
+         img{ padding: 0;}
+     }
+

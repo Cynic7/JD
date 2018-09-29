@@ -1,0 +1,74 @@
+@charset "utf-8";
+header{width: 1350px; margin: 0 auto;}
+
+//最上面的广告
+.header_AD{
+        background-color: #484aae;
+        a{
+            display: block; margin: 0 auto;width: 1190px;
+        }
+}
+
+//头部灰色导航条
+.header {background:#e3e4e5; font-size: 12px; position: relative;
+    .wrap { height:31px; width:1107px; margin: 0 auto;
+        ul {float:right; display:flex; width:791px; justify-content:flex-end;
+                li {padding:0 15px; margin-top: 7px;}
+                .disan {position:relative; padding-right:20px; width:41px; height:16px;}
+                li:nth-child(3) a:nth-child(1) {position:absolute; z-index:11;}
+                
+                //以下代码待重做 (触发二级导航)
+                li:nth-child(3) .blank { height:22px; width:100%; background:#fff; position:absolute; left:0; top:-4px; border:1px solid #ccc; box-shadow:0 -3px 3px #ccc; border-bottom:none; z-index:10; display:none;}
+                li:nth-child(3) .amazingbox { position:absolute;box-shadow:0 0 3px #ccc; width:182px; height:100px; background:#fff; left:-85px; top:18px;border:1px solid #ccc; z-index:9; padding:12px; box-sizing:border-box; padding-left:20px; display:none;}
+                li:nth-child(3) .amazingbox ul {height:100%; display:block; width:40%; float:left; margin-right:22px;}
+                li:nth-child(3) .amazingbox ul:last-child {margin-right:0;}
+                li:nth-child(3) .amazingbox ul .amazingboxli {background-image:none; padding:3px 15px 3px 0; border-bottom:1px #666 dotted;box-sizing:border-box; height:33.3%; border-right:0;}
+                li:nth-child(3) .amazingbox ul li:hover { background:rgba(255,153,0,.5);}
+                li:nth-child(3) .amazingbox ul .amazingboxli a {color:#000;}
+                li:nth-child(3) .amazingbox ul .amazingboxli a:hover {color:#f00; text-decoration:underline;}
+                
+                 //.disan .sanjiao {content:""; display:block; border-width:8px,8px,0px,8px; border-color:black transparent transparent transparent; border-style:solid; width:0; height:0; position:absolute; right:0; top:43%; margin-right:6px; z-index:11;  transform-origin:50% 30%;}
+                li:nth-child(4) {position:relative;padding-right:20px; }
+                //三角形
+                li:nth-child(4):after {content:""; display:block; border-width:5px,5px,0px,5px; border-color:#999 transparent transparent transparent; border-style:solid; width:0; height:0; position:absolute; right:0; top:50%; margin-right:6px;}
+                li a {color:#999;}
+                li:first-child a{color:#f10215;}
+                li:first-child a:hover {text-decoration:underline;}
+                li:first-child+li a {color:#f10215;&:hover{text-decoration:underline;}}
+                li:first-child~li {border-right:1px #d5d5d5 solid;}
+                .last{ width:124px; height:16px; background:url(../image/mingxieku/default_icon_bg.png) no-repeat -314px -64px;}
+                li:nth-child(6) a{display:flex;}
+            }
+     }
+     .logo{width: 190px; height: 170px;background: url(https://misc.360buyimg.com/mtd/pc/index_2017/2.1.0/static/images/sprite.head.png) no-repeat;
+            position: absolute; top: 0; left:80px;box-shadow: 0 -12px 10px rgba(0,0,0,.2);background-color: #fff;
+            border-bottom: 1px solid #ededed;}
+}
+
+
+//搜索框
+.search{margin-left: 400px; margin-top: 25px; display: flex; position: relative;
+        .form{position: relative;}
+        .hotwords{ margin-top: 8px; float: left;}
+        .hotwords .first{color: #f10215;    margin-right: 18px;}
+        .hotwords a{color: #999; margin-right: 8px;&:hover{color: #c81623;}}
+        .camera {background: url("https://misc.360buyimg.com/product/search/1.0.4/css/i/sprite-photo-search.png");
+                display: block;width: 19px; height: 15px; cursor: pointer; position: absolute; right: 70px; top: 9px;
+                &:hover{background-position: -30px 0;}}
+        }
+.search_text{padding: 4px 44px 4px 4px ; width: 450px; height: 25px; border: 0; font-size: 14px;    line-height: 25px; outline: 0; float: left;border: 1px solid transparent;} 
+.search_submit{width: 50px; height: 35px; margin-left: -3px; padding: 0; border: 0; background: #f10215; display: block; float: left; cursor: pointer;}
+
+//购物车
+.shop{width: 190px; height: 33px; background: #fff; text-align: center;line-height: 33px;border: 1px solid #e3e4e5;margin-left: 30px;}
+.shop a{color: #f10214;}
+
+//底部黑色导航
+nav {margin-left: 295px; margin-top: 20px;height: 40px;
+        ul{overflow: hidden; float: left;
+            li{float: left; padding: 0 15px; height: 40px;font-size: 14px; color: #333; line-height: 40px;}
+            li a {color: #333;}
+            }
+      .treasure{background: url(https://img14.360buyimg.com/da/jfs/t1/967/28/6410/11461/5ba1fe83Ea17efaad/729d8a4a505072b9.png);width: 190px; height: 40px; display: block; float: left;
+             margin-top: -9px;}
+    }

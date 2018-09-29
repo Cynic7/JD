@@ -1,0 +1,22 @@
+@charset "utf-8";
+@import "mixin";
+
+//通用的三个img的盒子
+#threeImg_box{
+    .box_bd a{display: block; width: 350px; height: 180px; margin-bottom: 10px;}
+    .box_bd a:not(.top){
+        width: 170px; height: 180px;float: left; margin-right: 10px;
+    }
+    .box_bd a:last-of-type{margin: 0;}
+}
+
+//五图模板
+#wuTu{
+    .box_hd{padding-bottom: 20px;padding-top: 10px;
+        figure{width: 130px; height: 43px; border: 1px solid #ccc; float: left;}
+        p{font-size: 18px; color: #333;line-height: 45px; margin-left: 10px; float: left;}
+    }
+    .box_bd{
+        .top { width: 350px; height: 226px;}
+    }
+}

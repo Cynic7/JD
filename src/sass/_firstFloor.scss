@@ -1,0 +1,75 @@
+@charset "utf-8";
+//第一层，轮播图块内容
+.fs{padding:5px 79.5px; position: relative; width:1191px; margin: 0 auto;
+    //左边广告栏
+    .left{position: absolute; display: flex; z-index: 2; left: -170px; cursor: pointer;
+        a{display: block; width: 0; overflow: hidden; transition: all 0.3s;}
+        &:hover a{width: 790px;}
+    }
+}
+
+//第一列 logo下面的导航
+.fs_col1{width: 190px; height: 480px; background: #fff; margin-top: -9px;color: #636363; float: left; margin-right: 10px;}
+
+//第二列 轮播图
+.fs_col2{width: 590px; height: 470px; overflow: hidden; position: relative;float: left; margin-right: 10px;
+    figure{width: 1000%; height: 100%; position: absolute; display: flex;}
+    img{
+        display: block; width: 590px; height: 100%;
+    }
+
+    ul{
+        position: absolute;bottom: 10px;  width: 152px;
+        left:46px;
+    }
+    .bullet{border-color: hsla(0,0%,100%,.4);}
+    .focus{
+        background: hsla(0,0%,100%,.2)!important;
+    }
+    .focus:after{background: #fdd9dd!important;}
+}
+//通用子弹头
+.bullet_wrap{display: flex; justify-content: space-around;
+    .bullet { width: 18px; height: 18px; border-radius: 50%; position: relative;
+        &:after{content:"";display: block;width:6px; height:6px;border-radius: 50%;border:2px solid #b9beba;
+            cursor: pointer; position: absolute; left: 4px; top:4px;}
+    }
+    .focus{
+        background:#fdd9dd;
+    }
+    .focus:after{background:#eb3436;border: 2px solid transparent;}
+}
+
+
+//通用左右按钮
+.goback,.gonext{background: rgba(0,0,0,0.2); border: 0; outline: 0;width: 20px; height: 40px; position: absolute; 
+    top: 45%; cursor: pointer;z-index: 2;}
+.gonext{
+     right: 0;
+}
+
+//第三列 图片广告三块
+.fs_col3{float: left; margin-right: 10px;
+    a {width: 190px; display: block;}
+    figure{width: 190px; height: 150px; margin-bottom: 10px;}
+    figure:hover {opacity: 0.8;}
+}
+
+//第四列 服务
+.fs_col4{width: 190px; height: 470px; float: left; background: #fff;}
+.fs_col4 .user{ padding-top: 62px; position:relative; height: 78px; text-align: center;}
+.fs_col4 .head_photo {position: absolute;left: 50%;top: -10px;margin-left: -34px;width: 65px;height: 65px; border-radius: 50%;}
+.fs_col4 .head_photo a{display: block; width: 55px; height: 55px;border: 5px solid #e3e1df; border-radius: 50%;    box-shadow: 3px 6px 25px #c3c3c3;}
+.fs_col4 .head_photo a img {width: 100%; height: 100%; border-radius: 50%;}
+
+.fs_col4 .user_sl {}
+.fs_col4 .user_sl a:not(.quit){display: inline-block; width: 20px; height: 20px;}
+.fs_col4 .user_sl a i{display:block;width: 20px; height: 20px; background: url(https://misc.360buyimg.com/mtd/pc/index_2017/2.1.0/static/images/sprite.user.png) no-repeat;}
+.fs_col4 .user_sl a:nth-child(1) i{ background-position: -111px -21px;}
+.fs_col4 .user_sl a:nth-child(2) i{ background-position: -136px -46px;}
+.fs_col4 .user_sl .quit{ display:inline-block; transform: translateY(-5px);}
+
+.fs_col4 .plus {width: 150px;padding: 0 5px;margin:5px auto;height: 25px;line-height: 25px;font-size: 12px;text-align: center;border-radius: 13px;transition:all 0.8s ease; box-shadow: 6px 8px 20px rgba(45,45,45,.15);}
+.fs_col4 .plus a {color: #e43f3b;white-space: nowrap;}
+.fs_col4 .plus:hover{background: #e01222;}
+.fs_col4 .plus:hover a {color: #fff;}

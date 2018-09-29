@@ -1,0 +1,108 @@
+@charset "utf-8";
+@import "mixin";
+
+.wrap{@include boxM(1190,480);}
+//通用的大标题样式
+.big_tit{@include boxM(150,45);font-size: 28px;text-align: center; line-height: 45px;
+        padding: 0 50px; color: #222; position: relative; margin-bottom: 20px;}
+.big_tit:before{    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    display: block;
+    background: #222;
+    top: 23px;
+    left: 0;}
+.big_tit:after{ content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    display: block;
+    background: #222;
+    top: 23px;
+    right: 0;
+}
+
+.zhiNeng{
+   .wrap{@include boxM(1190,480);
+        #shouJi .box_bd{
+            a{float: left;}
+            figure{width: 170px; height: 180px; margin: 0 10px 10px 0;}
+            a:nth-of-type(2) figure{margin: 0;}
+        }
+        #xinPin{
+            
+        }
+    }
+}
+
+//通用左图框
+#imgbox_left1{
+    width: 390px; height: 450px; position: relative; float: left;
+    
+    &:before{
+        content: '';
+        position: absolute;
+        display: block;
+        width: 340px;
+        height: 420px;
+        border: solid 5px #333;
+        right: 0;
+        top: 20px;
+        z-index: -1;
+    }
+    a{@include boxM(340,420);
+        figure{
+            &:hover{opacity: 0.8;}; transition: all 0.5s;
+            position: relative;
+        }
+    }
+    &:after{
+        content: '';
+        z-index: 0;
+        display: block;
+        position: absolute;
+        width: 340px;
+        height: 420px;
+        left: 25px;
+        top: 0;
+        background: #f0f3ef;
+        z-index: -1;
+    }
+}
+#imgbox_left2{
+    @extend #imgbox_left1;
+    a{@include boxM(340,200);}
+    a:first-of-type{margin-bottom: 20px;}
+}
+
+#imgbox_right1{
+    @extend #imgbox_left1;
+    &:before{right: 40px;}
+    margin-right:10px;
+}
+
+#imgbox_right2{
+    @extend #imgbox_left2;
+    &:before{right: 40px;}
+    margin-right:10px;
+}
+
+//通用的双层盒子
+.double_box{width: 390px; height: 450px; float: left; margin-right: 10px;
+    .wrap{width: 390px; height: 200px;background: #fff; padding-top: 20px;
+         &:first-of-type{margin-bottom: 10px;}
+         h4{padding: 0 20px; color: #222; font-weight: normal;font-size: 18px; line-height: 18px;
+            span{    color: #999;font-size: 14px;vertical-align: 1px;}
+         }
+         .imgbox{width: 360px; margin: 0 auto; overflow: hidden; margin-top: 25px;}
+         figure{transition: all 0.5s;&:hover{opacity: 0.8;}
+            width:130px; float: left;padding: 0 25px;
+         }
+    }
+}
+
+//通用两张图片的盒子
+#doubleImg_box{ margin: 0;
+    figure{margin-bottom: 10px;}
+}

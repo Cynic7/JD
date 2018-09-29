@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+//使用margin的box排版
+@mixin boxM($width:0,$height:0,$margin-top:0){
+    display: block;
+    @if $width!=0 {  //如果输入$width值为0，则自适应宽度
+        width: $width+px;
+    }
+    @if $height!=0 {  //如果输入$height值为0，则自适应高度
+        height: $height+px;
+    }
+    margin:$margin-top+px auto 0;
+    
+}
+
+//使用padding的box排版
+@mixin boxP($width:0,$height:0,$padding-top:0,$padding-leftRight:0){
+    display: block;
+    @if $width!=0 {  //如果输入$width值为0，则自适应宽度
+        width: $width+px;
+    }
+    @if $height!=0 {  //如果输入$height值为0，则自适应高度
+        height: $height+px;
+    }
+    padding:$padding-top+px $padding-leftRight+px 0;
+}
+
+
+//绝对定位
+@mixin position($left:0,$top:0){
+    position: absolute;
+    left: $left+px;
+    top: $top+px;
+}
+
+//多此出现的模板块 width: 390px; height: 450px; background: #fff; float: left; margin-right:10px
+@mixin moban($m:1){
+    width: 390px; height: 450px; background: #fff; float: left;
+    @if $m!=0{  //若传参0，则没有margin-right值
+        margin-right: 10px;
+    }
+}
+
+//半圆形 (需自设定位值)
+@mixin yuan(){
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    right: 54px;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #fff;
+}
+
+
+
+
+
+
+

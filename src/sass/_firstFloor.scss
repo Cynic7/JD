@@ -1,15 +1,44 @@
 @charset "utf-8";
 //第一层，轮播图块内容
-.fs{padding:5px 79.5px; position: relative; width:1191px; margin: 0 auto;
+.fs{padding:5px 78.5px; position: relative; width:1191px; margin: 0 auto;
     //左边广告栏
-    .left{position: absolute; display: flex; z-index: 2; left: -170px; cursor: pointer;
-        a{display: block; width: 0; overflow: hidden; transition: all 0.3s;}
+    .left{position: absolute; display: flex; z-index: 20; left: -174px; cursor: pointer;
+        a{display: block; width: 0; overflow: hidden; transition: all 0.3s; position: relative; z-index: 20;}
         &:hover a{width: 790px;}
+        a img{position: relative; z-index: 20;}
     }
 }
 
 //第一列 logo下面的导航
-.fs_col1{width: 190px; height: 480px; background: #fff; margin-top: -9px;color: #636363; float: left; margin-right: 10px;}
+.fs_col1{width: 190px; height: 480px; background: #fff; margin-top: -10px;color: #636363; float: left; margin-right: 10px;position: relative; margin-left: 1px;
+    .nav1>li{padding-left: 18px; height: 26px; line-height: 26px;transition: background-color .2s ease;
+            a{color: #626262;transition: color .2s ease; font-size: 14px;&:hover{color: #c81623;}} 
+            &:hover{background: #d9d9d9;}
+        }
+
+    .nav1>li:first-of-type{margin-top: 6px;}
+    
+    .nav2{ position: absolute; width: 998px; height: 450px; padding: 20px 0 10px 20px; z-index: 20; background: #fff;
+            top: 0; left: 192px;box-shadow: 3px 6px 25px #c3c3c3;display: none;
+          .nav2_left{ float: left;
+              .nav2_top li{float: left; 
+                  a{display: block; padding:0 10px; background: #333;float: left; height: 24px;line-height: 24px; color: #fff; margin-right: 10px;}
+                  a:hover{opacity: 0.8;}
+              }
+              
+              .nav2_content { margin-top: 20px;
+                  a{color:#666; &:hover{color: #c81623;}}
+                  .nav2_item {margin-top: 10px;}
+                  h3{text-align: right;width: 59px; font-size: 12px; float: left; padding-right: 10px;}
+                  ul{float: left; width: 710px;}
+                  li{float: left;padding: 0 10px;height: 16px;border-left: 1px solid #e0e0e0;line-height: 16px; margin:3px 0;}
+              }
+          }
+          .nav2_right{float: right; margin-right: 20px;
+                    figure{margin-top: 5px;}
+          }
+    }
+}
 
 //第二列 轮播图
 .fs_col2{width: 590px; height: 470px; overflow: hidden; position: relative;float: left; margin-right: 10px;
@@ -73,3 +102,45 @@
 .fs_col4 .plus a {color: #e43f3b;white-space: nowrap;}
 .fs_col4 .plus:hover{background: #e01222;}
 .fs_col4 .plus:hover a {color: #fff;}
+
+.fs_col4 {
+    .news{padding-left: 5px; margin-top: 20px;
+         p{position: relative;}
+         a{padding: 0 10px; color: #666; &:hover{color: #e33333;} ;}
+         p a:first-of-type{border-right: 1px #dfe0e1 solid;}
+         .more{float: right;}
+         .redline {    position: absolute;
+                        bottom: -5px;
+                        left: 10px;
+                        width: 27px;
+                        height: 2px;
+                        background: #db192b;
+                        display: block;
+                        
+                }
+         ul{margin-top: 15px; li{margin-bottom: 3px;}
+            a{display: block; width: 150px; padding: 0; margin: 0 10px;}
+            li:last-of-type a{border-bottom: 1px #eee solid; padding-bottom: 10px;}
+         }
+    }
+    .service{padding: 11px; padding-top: 22px;
+        a{width: 42px; height: 51px; display: block;color: #bea68d; &:hover{color: #e33333;}}
+        table {vertical-align: middle;}
+        td{text-align: center;}
+        i{display: block; width: 20px; height: 20px; margin: 0 auto; background: url(../images/sprite.png) no-repeat -155px -4px; background-size: 316px 224px; margin-bottom: 5px;}
+        
+        tr:nth-of-type(1) td:nth-of-type(2) i{background-position:-179px -4px ;}
+        tr:nth-of-type(1) td:nth-of-type(3) i{background-position:-206px -4px ;}
+        tr:nth-of-type(1) td:nth-of-type(4) i{background-position:-2px -4px ; width: 22px;}
+        
+        tr:nth-of-type(2) td:nth-of-type(1) i{background-position:-230px -4px ;}
+        tr:nth-of-type(2) td:nth-of-type(2) i{background-position:-256px -4px ;}
+        tr:nth-of-type(2) td:nth-of-type(3) i{background-position:-281px -4px ;}
+        tr:nth-of-type(2) td:nth-of-type(4) i{background-position:-28px -4px ;}
+        
+        tr:nth-of-type(3) td:nth-of-type(1) i{background-position:-54px -3px ;}
+        tr:nth-of-type(3) td:nth-of-type(2) i{background-position:-78px -3px ;}
+        tr:nth-of-type(3) td:nth-of-type(3) i{background-position:-103px -3px ;width: 22px;}
+        tr:nth-of-type(3) td:nth-of-type(4) i{background-position:-130px -3px ;}
+        }
+}

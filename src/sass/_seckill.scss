@@ -40,8 +40,11 @@
          .price s{ color: #b7bcb8;font-size: 12px; }
      }
 }
-.sk_last { float: left; background:#fff;
+.sk_last { float: left; background:#fff; position: relative;
          @include boxP(180,267.5,7.5,10);
          img{ padding: 0;}
+         .bullet_wrap_0 {width: 19px; position: absolute; left: 91px;bottom: 20px; display: flex; justify-content: space-between;}
+         .bullet_0 {width: 6px; height: 6px; background: #c0c0c0; border-radius: 50%;}
+         .active {background: #e33333!important;}
      }
 

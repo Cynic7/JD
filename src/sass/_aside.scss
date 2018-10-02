@@ -1,6 +1,39 @@
 .toolbar_wrap{
-    position: fixed; right: 17px; height: 100%; z-index: 999; top: 0;
+    position: fixed; right: 0; height: 100%; z-index: 999; top: 0;
     .toolbar_right{
         height: 100%; width: 6px; background: #7a6e6e;
+    }
+    .toolbar_content{
+        
+        position: absolute;
+        left: -30px; top: 35%;
+        
+        .toolbar_item{
+            width: 35px;
+            height: 35px;
+            margin-bottom: 1px;
+            cursor: pointer;
+            background-color: #7a6e6e;
+            border-radius: 3px 0 0 3px;
+            background:#7a6e6e url(../images/toolbars.png) no-repeat -88px -175px;
+            &:hover{background-color: #c81623;}
+        }
+        div:nth-of-type(2){background-position: -50px 0;}
+        div:nth-of-type(3){background-position: -50px -50px;}
+        div:nth-of-type(4){background-position: -50px -100px;}
+        div:nth-of-type(5){background-position: -190px -150px;}
+        div:nth-of-type(6){background-position: -50px -150px;}
+        div:nth-of-type(7){background-position: -50px -300px;}
+    }
+    .gotop {
+        position: absolute; bottom: 0;left: -30px;
+        width: 35px;
+        height: 35px;
+        margin-bottom: 1px;
+        cursor: pointer;
+        background-color: #7a6e6e;
+        border-radius: 3px 0 0 3px;
+        background:#7a6e6e url(../images/toolbars.png) no-repeat -50px -250px;
+        &:hover{background-color: #c81623;}
     }
 }

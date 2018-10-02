@@ -13,25 +13,31 @@ header{width: 1350px; margin: 0 auto;}
 .header {background:#e3e4e5; font-size: 12px; position: relative;
     .wrap { height:31px; width:1107px; margin: 0 auto;
         ul {float:right; display:flex; width:791px; justify-content:flex-end;
-                li {padding:0 15px; margin-top: 7px;}
+                li {padding:0 15px; margin-top: 6px;}
                 .disan {position:relative; padding-right:20px; width:41px; height:16px;}
                 li:nth-child(3) a:nth-child(1) {position:absolute; z-index:11;}
                 
-                //以下代码待重做 (触发二级导航)
-                li:nth-child(3) .blank { height:22px; width:100%; background:#fff; position:absolute; left:0; top:-4px; border:1px solid #ccc; box-shadow:0 -3px 3px #ccc; border-bottom:none; z-index:10; display:none;}
-                li:nth-child(3) .amazingbox { position:absolute;box-shadow:0 0 3px #ccc; width:182px; height:100px; background:#fff; left:-85px; top:18px;border:1px solid #ccc; z-index:9; padding:12px; box-sizing:border-box; padding-left:20px; display:none;}
-                li:nth-child(3) .amazingbox ul {height:100%; display:block; width:40%; float:left; margin-right:22px;}
-                li:nth-child(3) .amazingbox ul:last-child {margin-right:0;}
-                li:nth-child(3) .amazingbox ul .amazingboxli {background-image:none; padding:3px 15px 3px 0; border-bottom:1px #666 dotted;box-sizing:border-box; height:33.3%; border-right:0;}
-                li:nth-child(3) .amazingbox ul li:hover { background:rgba(255,153,0,.5);}
-                li:nth-child(3) .amazingbox ul .amazingboxli a {color:#000;}
-                li:nth-child(3) .amazingbox ul .amazingboxli a:hover {color:#f00; text-decoration:underline;}
                 
+                //触发二级导航
+                 .blank { height:22px; width:85%; background:#fff; position:absolute; left:7px; top:-4px; border:1px solid #ccc; box-shadow:0 -3px 3px #ccc; border-bottom:none; z-index:10; display:none;}
+                 .amazingbox { position:absolute;box-shadow:0 0 3px #ccc; width:280px; height:167px; background:#fff; left:7px; top:18px;border:1px solid #ccc; z-index:9; display:none;}
+                 .amazingbox ul { display:block;float:none; width: 100%;padding:10px 15px;}
+                 .amazingbox ul:last-child {margin-right:0;}
+                 .amazingbox ul .amazingboxli { width: 126px; float: left;padding: 0; border: 0; span{color:#e33333;}}
+                 .amazingbox a{color: #999!important;}
+                 .amazingbox ul:first-of-type{border-bottom: 1px #eee solid;}
+                 //.amazingbox li{margin-top: 0;}
+                 
+                 li:nth-child(4):hover .amazingbox{display: block;}
+                 li:nth-child(4):hover .blank{display: block;}
+                 li:nth-child(4) i{ margin-top: -1px;position: relative; z-index: 20;}
+                 li:nth-child(4) a {position: relative; z-index: 20;}
+                 a:hover{color: #e33333;}
                  //.disan .sanjiao {content:""; display:block; border-width:8px,8px,0px,8px; border-color:black transparent transparent transparent; border-style:solid; width:0; height:0; position:absolute; right:0; top:43%; margin-right:6px; z-index:11;  transform-origin:50% 30%;}
-                li:nth-child(4) {position:relative;padding-right:20px; }
+                li:nth-child(4) {position:relative; padding-right: 10px;}
                 //三角形
-                li:nth-child(4):after {content:""; display:block; border-width:5px,5px,0px,5px; border-color:#999 transparent transparent transparent; border-style:solid; width:0; height:0; position:absolute; right:0; top:50%; margin-right:6px;}
-                li a {color:#999;}
+                //li:nth-child(4):after {content:""; display:block; border-width:5px,5px,0px,5px; border-color:#999 transparent transparent transparent; border-style:solid; width:0; height:0; position:absolute; right:0; top:50%; margin-right:6px;}
+                a {color:#999;}
                 li:first-child a{color:#f10215;}
                 li:first-child a:hover {text-decoration:underline;}
                 li:first-child+li a {color:#f10215;&:hover{text-decoration:underline;}}

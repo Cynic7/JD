@@ -8,7 +8,7 @@ body {color: #333;background:#f0f3ef;
 img{display: block;}
 a {text-decoration:none;}
 a:hover {color:#c81623;}
-html,body,h1,h2,h3,h4,ul,li,div,p,ol,figure,section,aside,header,article,footer{margin: 0; padding: 0;}
+html,body,h1,h2,h3,h4,h5,ul,li,div,p,ol,figure,section,aside,header,article,footer{margin: 0; padding: 0;}
 .elip{overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;}
@@ -63,3 +63,15 @@ url(../fonts/iconfont.svg) format("svg")}
 
 //寻宝！
 @import "xunBao";
+
+//特色推荐！
+@import "teSe";
+
+//京东直播！
+@import "zhiBo";
+
+//还没逛够！
+@import "goOn";
+
+//尾部
+@import "footer";

@@ -1,7 +1,9 @@
+@charset "utf-8";
+
 .toolbar_wrap{
     position: fixed; right: 0; height: 100%; z-index: 999; top: 0;
     .toolbar_right{
-        height: 100%; width: 6px; background: #7a6e6e;
+        height: 100%; width: 6px; background: #7a6e6e; position: absolute; right: 0;
     }
     .toolbar_content{
         
@@ -9,6 +11,7 @@
         left: -30px; top: 35%;
         
         .toolbar_item{
+            position: relative;
             width: 35px;
             height: 35px;
             margin-bottom: 1px;
@@ -17,13 +20,38 @@
             border-radius: 3px 0 0 3px;
             background:#7a6e6e url(../images/toolbars.png) no-repeat -88px -175px;
             &:hover{background-color: #c81623;}
+            &:hover+.textbox{ left: -60px;background-color: #c81623;}
+            z-index:99;
         }
+       
         div:nth-of-type(2){background-position: -50px 0;}
         div:nth-of-type(3){background-position: -50px -50px;}
         div:nth-of-type(4){background-position: -50px -100px;}
         div:nth-of-type(5){background-position: -190px -150px;}
         div:nth-of-type(6){background-position: -50px -150px;}
         div:nth-of-type(7){background-position: -50px -300px;}
+        
+        .textbox:nth-of-type(2){top:36px}
+        .textbox:nth-of-type(3){top:72px}
+        .textbox:nth-of-type(4){top:108px}
+        .textbox:nth-of-type(5){top:144px}
+        .textbox:nth-of-type(6){top:180px}
+        .textbox:nth-of-type(7){top:216px}
+    }
+     .textbox{
+        width: 62px;
+        height: 35px;
+        line-height: 35px;
+        color: #fff;
+        text-align: center;
+        font-family: 微软雅黑;
+        position: absolute;
+        z-index: -1;
+        left: 35px;
+        top: 0;
+        background-color: #7a6e6e;
+        border-radius: 3px 0 0 3px;
+        transition: left 0.5s;
     }
     .gotop {
         position: absolute; bottom: 0;left: -30px;
@@ -35,5 +63,7 @@
         border-radius: 3px 0 0 3px;
         background:#7a6e6e url(../images/toolbars.png) no-repeat -50px -250px;
         &:hover{background-color: #c81623;}
+        &:hover .textbox{ left: -60px;background-color: #c81623;}
+        
     }
 }

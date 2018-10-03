@@ -1,4 +1,46 @@
 @charset "utf-8";
+
+//设置页面中广泛运用的样式
+li{list-style: none;}
+html,body {height:100%; width: 100%;}
+body {color: #333;background:#f0f3ef;overflow-x: hidden;
+       font: 12px/1.5 Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\\5b8b\4f53,sans-serif;}
+img{display: block;}
+a {text-decoration:none;}
+a:hover {color:#c81623;}
+html,body,h1,h2,h3,h4,h5,ul,li,div,p,ol,figure,section,aside,header,article,footer{margin: 0; padding: 0;}
+.elip{overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;}
+
+.jiantou{font-size: 20px;    line-height: 40px; color: hsla(0,0%,100%,.4);margin-left: -5px;}
+
+//字体图标
+@font-face{font-family:iconfont;
+src:url(../fonts/iconfont.eot?#iefix) format("embedded-opentype"),
+url(../fonts/iconfont.woff) format("woff"),
+url(../fonts/iconfont.ttf) format("truetype"),
+url(../fonts/iconfont.svg) format("svg")}
+
+@font-face{font-family:impact;src:url(../fonts/impact.eot);src:url(../fonts/impact.eot?#iefix) format("embedded-opentype"),url(../fonts/impact.woff) format("woff"),url(../fonts/impact.ttf) format("truetype"),url(../fonts/impact.svg) format("svg");font-weight:400;font-style:normal}
+
+.iconfont {
+    font-family: iconfont;
+    font-style: normal;
+    -webkit-text-stroke-width: .2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon_price {
+    font-family: 'impact', sans-serif;
+    display: block;
+    height: 38px;
+    line-height: 38px;
+}
+
+//浮动清除类
+.clear:after{content: '';display: block;clear: both; width: 0;height: 0; overflow: hidden;}
+
+
 header{width: 100%; margin: 0 auto;}
 
 //最上面的广告
@@ -12,6 +54,15 @@ header{width: 100%; margin: 0 auto;}
 //头部灰色导航条
 .header {background:#e3e4e5; font-size: 12px; position: relative;
     .wrap { height:31px; width:1107px; margin: 0 auto;
+    
+        .header_left{float: left; overflow: hidden;
+            a{color: #999; line-height: 31px; &:hover{color: #e30000;}}
+            div{float: left; margin-left: 8px;}
+            i{font-size: 14px;}
+            .goindex i{background: url(../images/goindex.png) no-repeat; width: 20px; height: 18px; display: inline-block; transform: translateY(4px);}
+        }
+        
+        
         ul {float:right; display:flex; width:791px; justify-content:flex-end;
                 li {padding:0 15px; margin-top: 6px;}
                 .disan {position:relative; padding-right:20px; width:41px; height:16px;}
@@ -48,11 +99,12 @@ header{width: 100%; margin: 0 auto;}
      }
      .logo{width: 190px; height: 170px;background: url(https://misc.360buyimg.com/mtd/pc/index_2017/2.1.0/static/images/sprite.head.png) no-repeat;
             position: absolute; top: 0; left:80px;box-shadow: 0 -12px 10px rgba(0,0,0,.2);background-color: #fff;
-            border-bottom: 1px solid #ededed;}
+            border-bottom: 1px solid #ededed; z-index: 2;}
 }
 
 
 //搜索框
+.form{overflow: hidden; width: 550px;}
 .search{margin-left: 400px; margin-top: 25px; display: flex; position: relative;
         .form{position: relative;}
         .hotwords{ margin-top: 8px; float: left;}
@@ -61,16 +113,20 @@ header{width: 100%; margin: 0 auto;}
         .camera {background: url("https://misc.360buyimg.com/product/search/1.0.4/css/i/sprite-photo-search.png");
                 display: block;width: 19px; height: 15px; cursor: pointer; position: absolute; right: 70px; top: 9px;
                 &:hover{background-position: -30px 0;}}
+        .logo2{display: none;}
         }
 .search_text{padding: 4px 44px 4px 4px ; width: 450px; height: 25px; border: 0; font-size: 14px;    line-height: 25px; outline: 0; float: left;border: 1px solid transparent;} 
-.search_submit{width: 50px; height: 35px; margin-left: -3px; padding: 0; border: 0; background: #f10215; display: block; float: left; cursor: pointer;}
+.search_submit{width: 50px; height: 35px; margin-left: -3px; padding: 0; border: 0; 
+                background: #f10215; display: block; float: left; cursor: pointer;
+                .fdj{font-size: 20px;font-weight: 700;color: #fff; line-height: 35px;}
+                }
 
 //购物车
 .shop{width: 190px; height: 33px; background: #fff; text-align: center;line-height: 33px;border: 1px solid #e3e4e5;margin-left: 30px;}
 .shop a{color: #f10214;}
 
 //底部黑色导航
-nav {margin-left: 295px; margin-top: 20px;height: 40px;
+nav {margin-left: 295px; margin-top: 20px;height: 40px; width: 1054px;
         ul{overflow: hidden; float: left;
             li{float: left; padding: 0 15px; height: 40px;font-size: 14px; color: #333; line-height: 40px;}
             li a {color: #333;}

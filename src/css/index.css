@@ -1,3 +1,4 @@
+@charset "UTF-8";
 li {
   list-style: none;
 }
@@ -10,6 +11,7 @@ html, body {
 body {
   color: #333;
   background: #f0f3ef;
+  overflow-x: hidden;
   font: 12px/1.5 Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\\5b8b\4f53,sans-serif;
 }
 
@@ -102,6 +104,31 @@ header {
   height: 31px;
   width: 1107px;
   margin: 0 auto;
+}
+.header .wrap .header_left {
+  float: left;
+  overflow: hidden;
+}
+.header .wrap .header_left a, .header .wrap .header_left footer .bottom ul li span, footer .bottom ul li .header .wrap .header_left span {
+  color: #999;
+  line-height: 31px;
+}
+.header .wrap .header_left a:hover, .header .wrap .header_left footer .bottom ul li span:hover, footer .bottom ul li .header .wrap .header_left span:hover {
+  color: #e30000;
+}
+.header .wrap .header_left div {
+  float: left;
+  margin-left: 8px;
+}
+.header .wrap .header_left i {
+  font-size: 14px;
+}
+.header .wrap .header_left .goindex i {
+  background: url(../images/goindex.png) no-repeat;
+  width: 20px;
+  height: 18px;
+  display: inline-block;
+  transform: translateY(4px);
 }
 .header .wrap ul {
   float: right;
@@ -230,6 +257,12 @@ header {
   box-shadow: 0 -12px 10px rgba(0, 0, 0, 0.2);
   background-color: #fff;
   border-bottom: 1px solid #ededed;
+  z-index: 2;
+}
+
+.form {
+  overflow: hidden;
+  width: 550px;
 }
 
 .search {
@@ -269,6 +302,9 @@ header {
 .search .camera:hover {
   background-position: -30px 0;
 }
+.search .logo2 {
+  display: none;
+}
 
 .search_text {
   padding: 4px 44px 4px 4px;
@@ -293,6 +329,12 @@ header {
   float: left;
   cursor: pointer;
 }
+.search_submit .fdj {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 35px;
+}
 
 .shop {
   width: 190px;
@@ -312,6 +354,7 @@ nav {
   margin-left: 295px;
   margin-top: 20px;
   height: 40px;
+  width: 1054px;
 }
 nav ul {
   overflow: hidden;
@@ -348,6 +391,8 @@ nav .treasure {
   height: 100%;
   width: 6px;
   background: #7a6e6e;
+  position: absolute;
+  right: 0;
 }
 .toolbar_wrap .toolbar_content {
   position: absolute;
@@ -355,6 +400,7 @@ nav .treasure {
   top: 35%;
 }
 .toolbar_wrap .toolbar_content .toolbar_item {
+  position: relative;
   width: 35px;
   height: 35px;
   margin-bottom: 1px;
@@ -362,8 +408,13 @@ nav .treasure {
   background-color: #7a6e6e;
   border-radius: 3px 0 0 3px;
   background: #7a6e6e url(../images/toolbars.png) no-repeat -88px -175px;
+  z-index: 99;
 }
 .toolbar_wrap .toolbar_content .toolbar_item:hover {
+  background-color: #c81623;
+}
+.toolbar_wrap .toolbar_content .toolbar_item:hover + .textbox {
+  left: -60px;
   background-color: #c81623;
 }
 .toolbar_wrap .toolbar_content div:nth-of-type(2) {
@@ -384,6 +435,39 @@ nav .treasure {
 .toolbar_wrap .toolbar_content div:nth-of-type(7) {
   background-position: -50px -300px;
 }
+.toolbar_wrap .toolbar_content .textbox:nth-of-type(2) {
+  top: 36px;
+}
+.toolbar_wrap .toolbar_content .textbox:nth-of-type(3) {
+  top: 72px;
+}
+.toolbar_wrap .toolbar_content .textbox:nth-of-type(4) {
+  top: 108px;
+}
+.toolbar_wrap .toolbar_content .textbox:nth-of-type(5) {
+  top: 144px;
+}
+.toolbar_wrap .toolbar_content .textbox:nth-of-type(6) {
+  top: 180px;
+}
+.toolbar_wrap .toolbar_content .textbox:nth-of-type(7) {
+  top: 216px;
+}
+.toolbar_wrap .textbox {
+  width: 62px;
+  height: 35px;
+  line-height: 35px;
+  color: #fff;
+  text-align: center;
+  font-family: 微软雅黑;
+  position: absolute;
+  z-index: -1;
+  left: 35px;
+  top: 0;
+  background-color: #7a6e6e;
+  border-radius: 3px 0 0 3px;
+  transition: left 0.5s;
+}
 .toolbar_wrap .gotop {
   position: absolute;
   bottom: 0;
@@ -397,6 +481,10 @@ nav .treasure {
   background: #7a6e6e url(../images/toolbars.png) no-repeat -50px -250px;
 }
 .toolbar_wrap .gotop:hover {
+  background-color: #c81623;
+}
+.toolbar_wrap .gotop:hover .textbox {
+  left: -60px;
   background-color: #c81623;
 }
 
@@ -1721,6 +1809,7 @@ footer a:hover, footer .bottom ul li span:hover {
 footer .top {
   width: 1190px;
   height: 42px;
+  margin: 0 auto;
   margin-top: 30px;
   padding: 0 79.5px 30px 79.5px;
   border-bottom: 1px solid #dedede;

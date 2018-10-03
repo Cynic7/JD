@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+    	#sure{
+    		width: 480px; margin-left: -9px;
+    	}
+    	.pro1{
+    		background: url(images/reg-icon.png) no-repeat 0 -200px;
+    		display: inline-block;
+    		width:24px; height: 24px;
+    		text-align: center; color: white; line-height: 25px;
+    		margin-left: 23px;
+    	}
+    	
+    	.top_por{
+    		height: 105px; font-size: 12px; color: #3b4;
+    	}
+    	.top_por p {
+    		 margin-top: 15px;
+    	}
+    	.line{
+    		background: url(images/reg-icon.png) no-repeat 0 -100px;
+    		width: 124px; height: 10px; display: inline-block;
+    		position: absolute; left: 0; top: 6px;
+    	}
+    	.padding_box{
+    		padding-left: 125px; position: relative; color: #999; 
+    	}
+    	.padding_box .pro1{background-position: -45px -200px; color: #999;}
+    	.validation{
+    		text-indent: 8px; margin-bottom: 20px; margin-top: 5px; color: #999;font-size: 13px;
+    	}
+    	.pas_repeat{
+    		text-indent: 4px;
+    	}
+    	#check{
+    		margin-bottom: 15px; margin-right: 5px; transform: translate(0,1.5px);
+    	}
+    	.form1{
+    		width:500px; margin-bottom: 188px;margin-top: 80px;
+    	}
+    	footer{
+    		padding: 30px 0;
+    		border-top: 1px #eee solid;
+    	}
+    	footer .container {width: 998px;}
+    	footer .container span{
+    	 text-align: center; border-right: 1px #aaa solid; font-size: 12px;
+    	}
+    	footer .container span a {
+    		color: #999;
+    	}
+    	footer .container .last{
+    		border: 0; width: 96px;
+    	}
+    	footer p{
+    		text-align:  center;color: #999; margin-top: 40px;font-size: 12px;
+    	}
+    </style>
+  </head>
+  <body>
+  	<div class="page-header" style="padding: 0 60px;">
+	  <h1>
+	  	<div style="background: url(https://misc.360buyimg.com/user/reg-com/css/i/icon.png);
+	  		width: 150px; height: 49px; display: inline-block;"></div>
+	  	<small>用户注册</small>
+	  	<div class="pull-right" style="font-size: 16px; margin-top: 28px; color: #999;">
+	  		已有账号？<a href="javascript:;">请登录></a>
+	  	</div>
+	  </h1>
+	</div>
+  	<form action="" style="" class="container form1">
+  		<div class="top_por">
+  			<div class="pull-left">
+  				<div  class="pro1">
+  					1
+  				</div>
+  				<p>
+  					填写账号信息
+  				</p>
+  			</div>
+  			
+  			<div class="pull-left padding_box">
+  				<span class="line"></span>
+  				<div  class="pro1">
+  					2
+  				</div>
+  				<p>
+  					　注册成功　
+  				</p>
+  			</div>
+  			<div class="pull-left padding_box">
+  				<span class="line"></span>
+  				<div  class="pro1">
+  					3
+  				</div>
+  				<p>
+  					　账号登录　
+  				</p>
+  			</div>
+  			
+  		</div>
+  		<div class="input-group has-success has-feedback form-inline">
+  			<div class="input-group-addon"><b>用户名:</b></div>
+  			<input type="text" class="form-control"/>
+  			<span class="glyphicon glyphicon-ok form-control-feedback pull-left"></span>
+  		</div>
+  		<div class="validation name_v">6~18个字符，可使用字母、数字、下划线，需以字母开头</div>
+  		
+  		<div class="input-group  has-feedback">
+  			<div class="input-group-addon"><b>密　码:</b></div>
+  			<input type="password" class="form-control" />
+  			<span class="glyphicon glyphicon-remove form-control-feedback"></span>
+  		</div>
+  		<div class="validation name_v">6~16个字符，区分大小写</div>
+  		
+  		<div class="input-group has-error has-feedback " id="sure">
+  			<div class="input-group-addon"><b>确认密码</b></div>
+  			<input type="password" class="form-control" />
+  			<span class="glyphicon glyphicon-remove form-control-feedback"></span>
+  		</div>
+  		<div class="validation pas_repeat">请再次填写密码</div>
+  		
+  		<div class="input-group has-feedback ">
+  			<div class="input-group-addon"><b>邮　箱:</b></div>
+  			<input type="text" class="form-control"/>
+  			<span class="glyphicon glyphicon-ok form-control-feedback"></span>
+  		</div>
+  		<div class="validation name_v">请填写正确邮箱格式</div>
+  		
+  		<div class="center-block">
+  			<label for="check">
+	  			<input type="checkbox" name="checkbox" value="" id="check" class=""/>同意"服务条款"和"隐私权相关政策"
+	  		</label>
+  		</div>
+  		<div>
+  			<input type="submit" class="btn btn-primary btn-lg" style="width:100%;" value="用户注册"/>
+  		</div>
+  	</form>
+  	
+  	<footer>
+  		<div class="container">
+  			<span class="col-xs-1">
+  				<a href="">关于我们</a>
+  			</span>
+  			<span class="col-xs-1">
+  				<a href="">联系我们</a>
+  			</span>
+  			<span class="col-xs-1">
+  				<a href="">人才招聘</a>
+  			</span>
+  			<span class="col-xs-1">
+  				<a href="">商家入驻</a>
+  			</span>
+  			<span class="col-xs-1">
+  				<a href="">广告服务</a>
+  			</span>
+  			<span class="col-xs-1">
+  				<a href="">手机京东</a>
+  			</span>
+  			<span class="col-xs-1">
+  				<a href="">友情链接</a>
+  			</span>
+  			<span class="col-xs-1">
+  				<a href="">销售联盟</a>
+  			</span>
+  			<span class="col-xs-1">
+  				<a href="">京东社区</a>
+  			</span>
+  			<span class="col-xs-1">
+  				<a href="">京东公益</a>
+  			</span>
+  			
+  			<span class="col-xs-1 last">
+  				<a href="">English site</a>
+  			</span>
+  			<p>
+  				Copyright©2004-2018  京东JD.com 版权所有
+  			</p>
+  		</div>
+  	</footer>
+  	
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    	
+    </script>
+  </body>
+  
+</html>

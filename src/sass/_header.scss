@@ -122,8 +122,34 @@ header{width: 100%; margin: 0 auto;}
                 }
 
 //购物车
-.shop{width: 190px; height: 33px; background: #fff; text-align: center;line-height: 33px;border: 1px solid #e3e4e5;margin-left: 30px;}
-.shop a{color: #f10214;}
+.shop_hoverbox{width: 191px; height: 34px; margin-left: 30px;}
+.shop_hoverbox:hover .empty_content{display: block;}
+.shop_hoverbox:hover .shop{border-bottom: 0;border-color:#ccc;}
+.shop{width: 190px; height: 33px; background: #fff; text-align: center;line-height: 33px;
+        border: 1px solid #e3e4e5;position:relative; z-index: 2;
+        
+     a{color: #f10214;}
+     .sum{display: inline-block;width: 14px; height: 14px; border-radius: 50%; background: #f10215; color: #fff;line-height: 14px; margin-top: -5px; transform: translateY(-5px);}
+
+    }
+ .empty_content{
+                display: none;
+                width: 308px;
+                height: 49px;
+                padding: 10px 0;
+                text-align: center;
+                line-height: 49px;
+                overflow: hidden;
+                color: #999;
+                position: absolute;
+                box-shadow: 1px 2px 1px rgba(0,0,0,.1); border: 1px solid #ccc;
+                background: #fff;
+                right: 177px;
+                top: 33px;
+                i{display: inline-block; background: url("https://img11.360buyimg.com/uba/jfs/t3571/299/131233948/1117/a1196554/58004d6dN2927f0f7.png") no-repeat; width: 56px; height: 49px; vertical-align: middle;}
+       }
+     
+
 
 //底部黑色导航
 nav {margin-left: 295px; margin-top: 20px;height: 40px; width: 1054px;

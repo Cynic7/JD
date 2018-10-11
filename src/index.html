@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script type="text/javascript" src="script/thirdplugins/require.js" defer async="true" data-main="script/js/index.js"></script>
 	</head>
 	<body>
 		<!--头部-->
@@ -202,9 +203,9 @@
 					</div>
 				</div>
 				<div class="fs_col2">
-					<figure>
+					<figure>					<!--轮播图-->
 						<a href="" target="_blank">
-						<img src="https://m.360buyimg.com/babel/jfs/t1/1717/10/6432/95794/5ba301dfEb2129577/f6e7651e57ad2993.jpg" alt="" class="img1" />
+							<img src="https://m.360buyimg.com/babel/jfs/t1/1717/10/6432/95794/5ba301dfEb2129577/f6e7651e57ad2993.jpg" alt="" class="img1" />
 						</a>
 						<a href="" target="_blank">
 							<img src="" alt="" class="img2" />
@@ -292,11 +293,17 @@
 							<a href="" target="_blank" class="more">更多</a>
 							<span class="redline"></span>
 						</p>
-						<ul>
+						<ul class="cuxiao">
 							<li><a href="" target="_blank" class="elip">抢666笔记本神券抢666笔记本神券</a></li>
-							<li><a href="" target="_blank">抢666笔记本神券</a></li>
-							<li><a href="" target="_blank">抢666笔记本神券</a></li>
-							<li><a href="" target="_blank">抢666笔记本神券</a></li>
+							<li><a href="" target="_blank" class="elip">抢666笔记本神券</a></li>
+							<li><a href="" target="_blank" class="elip">抢666笔记本神券</a></li>
+							<li><a href="" target="_blank" class="elip">抢666笔记本神券</a></li>
+						</ul>
+						<ul class="cuxiao">
+							<li><a href="" target="_blank" class="elip">抢666笔记本神券抢666笔记本神券</a></li>
+							<li><a href="" target="_blank" class="elip">抢666笔记本神券</a></li>
+							<li><a href="" target="_blank" class="elip">抢666笔记本神券</a></li>
+							<li><a href="" target="_blank" class="elip">抢666笔记本神券</a></li>
 						</ul>
 					</div>
 					<div class="service">
@@ -339,59 +346,75 @@
 							<div>00</div>
 						</div>
 					</div>
-					<ul class="sk_body">
+					<div class="sk_body_overflow">
 						<!--左右箭头-->
 						<button class="gonext"><i class="iconfont jiantou"></i></button>
 						<button class="goback"><i class="iconfont jiantou"></i></button>
-						<li class="sk_item">
-							<a href="" target="_blank" title="">
-								<img src="https://img30.360buyimg.com/mobilecms/s140x140_jfs/t22513/85/147378376/75135/c06edd77/5b271914N359a532c.jpg!q90.webp" alt="" />
-								<p class="sk_item_name">华为(HUAWEI)　MateBook D(2018版) 15.6英寸轻薄微边框笔记本(i5-8250U 8G 256G MX150 2G独显FHD office)黑</h4>
-								<div class="price">
-									<span>￥4888.00</span>
-									<s>￥4888.00</s>
-								</div>
-							</a>
-						</li>
-						<li class="sk_item">
-							<a href="" target="_blank" title="">
-								<img src="https://img30.360buyimg.com/mobilecms/s140x140_jfs/t22513/85/147378376/75135/c06edd77/5b271914N359a532c.jpg!q90.webp" alt="" />
-								<p class="sk_item_name">华为(HUAWEI)　MateBook D(2018版) 15.6英寸轻薄微边框笔记本(i5-8250U 8G 256G MX150 2G独显FHD office)黑</h4>
-								<div class="price">
-									<span>￥4888.00</span>
-									<s>￥4888.00</s>
-								</div>
-							</a>
-						</li>
-						<li class="sk_item">
-							<a href="" target="_blank" title="">
-								<img src="https://img30.360buyimg.com/mobilecms/s140x140_jfs/t22513/85/147378376/75135/c06edd77/5b271914N359a532c.jpg!q90.webp" alt="" />
-								<p class="sk_item_name">华为(HUAWEI)　MateBook D(2018版) 15.6英寸轻薄微边框笔记本(i5-8250U 8G 256G MX150 2G独显FHD office)黑</h4>
-								<div class="price">
-									<span>￥4888.00</span>
-									<s>￥4888.00</s>
-								</div>
-							</a>
-						</li>
-						<li class="sk_item">
-							<a href="" target="_blank" title="">
-								<img src="https://img12.360buyimg.com/mobilecms/s140x140_jfs/t27238/85/408946467/247772/24f2a763/5b91148eN281ea9c2.jpg!q90.webp" alt="" />
-								<p class="sk_item_name">华为(HUAWEI)　MateBook D(2018版) 15.6英寸轻薄微边框笔记本(i5-8250U 8G 256G MX150 2G独显FHD office)黑</h4>
-								<div class="price">
-									<span>￥4888.00</span>
-									<s>￥4888.00</s>
-								</div>
-							</a>
-						</li>
-					</ul>
+						<ul class="sk_body clear">
+							<li class="sk_item">
+								<a href="" target="_blank" title="">
+									<img src="https://img30.360buyimg.com/mobilecms/s140x140_jfs/t22513/85/147378376/75135/c06edd77/5b271914N359a532c.jpg!q90.webp" alt="" />
+									<p class="sk_item_name">华为(HUAWEI)　MateBook D(2018版) 15.6英寸轻薄微边框笔记本(i5-8250U 8G 256G MX150 2G独显FHD office)黑</h4>
+									<div class="price">
+										<span>￥4888.00</span>
+										<s>￥4888.00</s>
+									</div>
+								</a>
+							</li>
+							<li class="sk_item">
+								<a href="" target="_blank" title="">
+									<img src="https://img30.360buyimg.com/mobilecms/s140x140_jfs/t22513/85/147378376/75135/c06edd77/5b271914N359a532c.jpg!q90.webp" alt="" />
+									<p class="sk_item_name">华为(HUAWEI)　MateBook D(2018版) 15.6英寸轻薄微边框笔记本(i5-8250U 8G 256G MX150 2G独显FHD office)黑</h4>
+									<div class="price">
+										<span>￥4888.00</span>
+										<s>￥4888.00</s>
+									</div>
+								</a>
+							</li>
+							<li class="sk_item">
+								<a href="" target="_blank" title="">
+									<img src="https://img30.360buyimg.com/mobilecms/s140x140_jfs/t22513/85/147378376/75135/c06edd77/5b271914N359a532c.jpg!q90.webp" alt="" />
+									<p class="sk_item_name">华为(HUAWEI)　MateBook D(2018版) 15.6英寸轻薄微边框笔记本(i5-8250U 8G 256G MX150 2G独显FHD office)黑</h4>
+									<div class="price">
+										<span>￥4888.00</span>
+										<s>￥4888.00</s>
+									</div>
+								</a>
+							</li>
+							<li class="sk_item">
+								<a href="" target="_blank" title="">
+									<img src="https://img12.360buyimg.com/mobilecms/s140x140_jfs/t27238/85/408946467/247772/24f2a763/5b91148eN281ea9c2.jpg!q90.webp" alt="" />
+									<p class="sk_item_name">华为(HUAWEI)　MateBook D(2018版) 15.6英寸轻薄微边框笔记本(i5-8250U 8G 256G MX150 2G独显FHD office)黑</h4>
+									<div class="price">
+										<span>￥4888.00</span>
+										<s>￥4888.00</s>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					
 					<div class="sk_last">
-							<a href="" target="_blank" title="">
-								<img src="https://img13.360buyimg.com/mobilecms/s180x260_jfs/t1/1762/28/7081/94748/5ba48dc8Ec3d07331/a88fba6131582be0.png!q90!cc_180x260" alt="" />
-								<div class="bullet_wrap_0">
-									<div class="bullet_0 active"></div>
-									<div class="bullet_0"></div>
-								</div>
-							</a>
+						<div style="width: 180px; height: 260px; overflow: hidden; position: relative;">
+							<div class="sk_last_wrap">
+								<a href="" target="_blank" title="">
+									<img src="https://img13.360buyimg.com/mobilecms/s180x260_jfs/t1/1762/28/7081/94748/5ba48dc8Ec3d07331/a88fba6131582be0.png!q90!cc_180x260" alt="" />
+									
+								</a>
+								<a href="" target="_blank" title="">
+									<img src="https://img13.360buyimg.com/mobilecms/s180x260_jfs/t1/1762/28/7081/94748/5ba48dc8Ec3d07331/a88fba6131582be0.png!q90!cc_180x260" alt="" />
+									
+								</a>
+								<a href="" target="_blank" title="">
+									<img src="https://img13.360buyimg.com/mobilecms/s180x260_jfs/t1/1762/28/7081/94748/5ba48dc8Ec3d07331/a88fba6131582be0.png!q90!cc_180x260" alt="" />
+								</a>
+							</div>
+						</div>
+						
+						<div class="bullet_wrap_0">
+							<div class="bullet_0 active"></div>
+							<div class="bullet_0"></div>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -409,35 +432,74 @@
 						</div>
 						<div class="box_bd">
 							<ul class="nav">
-								<li><a href="" target="_blank" class="nav_active">手机通讯</a></li>
-								<li><a href="" target="_blank">男装</a></li>
-								<li><a href="" target="_blank">厨房小电</a></li>
-								<li><a href="" target="_blank">面部护肤</a></li>
-								<li><a href="" target="_blank">安全驾驶</a></li>
+								<li><a href="javascript:;"  class="nav_active">手机通讯</a></li>
+								<li><a href="javascript:;" >男装</a></li>
+								<li><a href="javascript:;" >女装</a></li>
+								<li><a href="javascript:;" >笔记本电脑</a></li>
+								<li><a href="javascript:;">零食</a></li>
 							</ul>
-							<ol class="item_list">
-								<li>
-									<a href="" target="_blank" class="clear">
-										<img src="https://img20.360buyimg.com/mobilecms/s80x80_jfs/t7951/357/3030577771/71102/9c84b3c1/59b857f5N754efdeb.jpg!q90.webp" alt="" />
-										<span class="icon_price">1</span>
-										<p>Apple iPhone 8 (A1863) 256GB 金色 移动联通电信4G手机</p>
-									</a>
-								</li>
-								<li>
-									<a href="" target="_blank" class="clear">
-										<img src="https://img20.360buyimg.com/mobilecms/s80x80_jfs/t7951/357/3030577771/71102/9c84b3c1/59b857f5N754efdeb.jpg!q90.webp" alt="" />
-										<span class="icon_price">2</span>
-										<p>Apple iPhone 8 (A1863) 256GB 金色 移动联通电信4G手机</p>
-									</a>
-								</li>
-								<li>
-									<a href="" target="_blank" class="clear">
-										<img src="https://img20.360buyimg.com/mobilecms/s80x80_jfs/t7951/357/3030577771/71102/9c84b3c1/59b857f5N754efdeb.jpg!q90.webp" alt="" />
-										<span class="icon_price">3</span>
-										<p>Apple iPhone 8 (A1863) 256GB 金色 移动联通电信4G手机</p>
-									</a>
-								</li>
-							</ol>
+							<div class="paiHangBan_wrap_overflow">
+								<div class="paiHangBan_wrap_move" id="move_0">
+									<ol class="item_list">
+										<li>
+											<a href="" target="_blank" class="clear">
+												<img src="https://img20.360buyimg.com/mobilecms/s80x80_jfs/t7951/357/3030577771/71102/9c84b3c1/59b857f5N754efdeb.jpg!q90.webp" alt="" />
+												<span class="icon_price">1</span>
+												<p>Apple iPhone 8 (A1863) 256GB 金色 移动联通电信4G手机</p>
+											</a>
+										</li>
+										<li>
+											<a href="" target="_blank" class="clear">
+												<img src="https://img20.360buyimg.com/mobilecms/s80x80_jfs/t7951/357/3030577771/71102/9c84b3c1/59b857f5N754efdeb.jpg!q90.webp" alt="" />
+												<span class="icon_price">2</span>
+												<p>Apple iPhone 8 (A1863) 256GB 金色 移动联通电信4G手机</p>
+											</a>
+										</li>
+										<li>
+											<a href="" target="_blank" class="clear">
+												<img src="https://img20.360buyimg.com/mobilecms/s80x80_jfs/t7951/357/3030577771/71102/9c84b3c1/59b857f5N754efdeb.jpg!q90.webp" alt="" />
+												<span class="icon_price">3</span>
+												<p>Apple iPhone 8 (A1863) 256GB 金色 移动联通电信4G手机</p>
+											</a>
+										</li>
+									</ol>
+									<ol class="item_list">
+										<li>
+											<a href="" target="_blank" class="clear">
+												<img src="https://img20.360buyimg.com/mobilecms/s80x80_jfs/t7951/357/3030577771/71102/9c84b3c1/59b857f5N754efdeb.jpg!q90.webp" alt="" />
+												<span class="icon_price">1</span>
+												<p>Apple iPhone 8 (A1863) 256GB 金色 移动联通电信4G手机</p>
+											</a>
+										</li>
+										<li>
+											<a href="" target="_blank" class="clear">
+												<img src="https://img20.360buyimg.com/mobilecms/s80x80_jfs/t7951/357/3030577771/71102/9c84b3c1/59b857f5N754efdeb.jpg!q90.webp" alt="" />
+												<span class="icon_price">2</span>
+												<p>Apple iPhone 8 (A1863) 256GB 金色 移动联通电信4G手机</p>
+											</a>
+										</li>
+										<li>
+											<a href="" target="_blank" class="clear">
+												<img src="https://img20.360buyimg.com/mobilecms/s80x80_jfs/t7951/357/3030577771/71102/9c84b3c1/59b857f5N754efdeb.jpg!q90.webp" alt="" />
+												<span class="icon_price">3</span>
+												<p>Apple iPhone 8 (A1863) 256GB 金色 移动联通电信4G手机</p>
+											</a>
+										</li>
+									</ol>
+								</div>
+								<div class="paiHangBan_wrap_move" id="move_1">
+									
+								</div>
+								<div class="paiHangBan_wrap_move" id="move_2">
+									
+								</div>
+								<div class="paiHangBan_wrap_move" id="move_3">
+									
+								</div>
+								<div class="paiHangBan_wrap_move" id="move_4">
+									
+								</div>
+							</div>
 							<div class="bullet_wrap">
 									<div class="bullet focus"></div>
 									<div class="bullet"></div>
@@ -445,7 +507,7 @@
 						</div>
 					</div>
 					
-					<div class="huiMai">		 <!--会买专辑-->
+					<div class="huiMai" id="huimai1">		 <!--会买专辑-->
 						<div class="box_hd">
 							<a href="" target="_blank">
 								<h3>会买专辑</h3>
@@ -453,30 +515,84 @@
 								<span>甄选优质好物</span>
 							</a>
 						</div>
-						<div class="box_bd">
-							<figure class="top">
-								<a href="" target="_blank">
-									<img src="https://img12.360buyimg.com/mobilecms/s350x128_jfs/t23668/346/1376721178/552923/1c742e36/5b5ed2adN1ce9a47f.png!q90!cc_350x128.webp" alt="" />
-								</a>
-							</figure>
-							<figure class="center">
-								<a href="" target="_blank">
-									<img src="https://img12.360buyimg.com/mobilecms/s105x105_jfs/t23476/36/483265029/73910/2678b578/5b30b517N3c1f465e.jpg!q90"/>
-								</a>
-								<a href="" target="_blank">
-									<img src="https://img12.360buyimg.com/mobilecms/s105x105_jfs/t23476/36/483265029/73910/2678b578/5b30b517N3c1f465e.jpg!q90"/>
-								</a>
-								<a href="" target="_blank">
-									<img src="https://img12.360buyimg.com/mobilecms/s105x105_jfs/t23476/36/483265029/73910/2678b578/5b30b517N3c1f465e.jpg!q90"/>
-								</a>
-								
-							</figure>
-							<h2>
-								时尚花式逆袭，国风T恤C位出道
-							</h2>
-							<span>
-								提到中国元素，我们首先会想到盘扣、麻制之类的中式设计，可当国风元素碰上街潮文化，碰撞出新时髦的火花。今年大热的汉字元素，融合了古韵的浪漫情怀；复杂的刺绣工艺，处处细节彰显风格；宽松的设计剪裁，复古同时兼顾时尚。国风袭来，还不让你逆袭这个炎夏？
-							</span>
+						<div class="huiMai_overflow">
+							<div class="huiMai_move">
+								<div class="box_bd">
+									<figure class="top">
+										<a href="" target="_blank">
+											<img src="https://img11.360buyimg.com/mobilecms/s350x128_jfs/t16330/269/687587486/24613/cfaeeca8/5a3ca2a8N9fab2618.jpg!q90!cc_350x128" alt="" />
+										</a>
+									</figure>
+									<figure class="center">
+										<a href="" target="_blank">
+											<img src="https://img13.360buyimg.com/mobilecms/s105x105_jfs/t7822/207/363206965/179173/d726fb78/59925c44N461a1601.jpg!q90"/>
+										</a>
+										<a href="" target="_blank">
+											<img src="https://img13.360buyimg.com/mobilecms/s105x105_jfs/t7711/364/1610280464/59956/9e439c0b/599e38deN05237d7a.jpg!q90"/>
+										</a>
+										<a href="" target="_blank">
+											<img src="https://img11.360buyimg.com/mobilecms/s105x105_jfs/t5659/19/4816480284/219300/2d8449e5/59561df3N317a4ac1.jpg!q90"/>
+										</a>
+										
+									</figure>
+									<h2>
+										静音动感单车，给你拒绝胖的自信
+									</h2>
+									<span>
+										拒绝胖大概是除个别例外所有女生的愿望了，美食当前抵挡不了，可又害怕吃多会胖。静音动感单车助你即可大口吃肉，又可以不发胖，天天健身，燃烧脂肪，防止脂肪堆积，静音更是让健身不影响家人休息，静音不打扰，自信保持好身材，让自己美美哒~
+									</span>
+								</div>
+								<div class="box_bd">
+									<figure class="top">
+										<a href="" target="_blank">
+											<img src="https://img11.360buyimg.com/mobilecms/s350x128_jfs/t24457/324/1345584210/152068/a3011f4a/5b5cc265Naa7a8dc3.jpg!q90!cc_350x128" alt="" />
+										</a>
+									</figure>
+									<figure class="center">
+										<a href="" target="_blank">
+											<img src="https://img12.360buyimg.com/mobilecms/s105x105_jfs/t18469/162/2592359673/239582/e022adf3/5afaca60N98e14693.jpg!q90"/>
+										</a>
+										<a href="" target="_blank">
+											<img src="https://img20.360buyimg.com/mobilecms/s105x105_jfs/t15901/128/2561913760/263894/86e893e3/5ab478c2Ncb60cae3.jpg!q90"/>
+										</a>
+										<a href="" target="_blank">
+											<img src="https://img11.360buyimg.com/mobilecms/s105x105_jfs/t22012/59/492550531/194352/a3d53909/5b0fc70eNcd96bf37.jpg!q90"/>
+										</a>
+										
+									</figure>
+									<h2>
+										时尚轻薄，AI手机带来全新体验
+									</h2>
+									<span>
+										人工智能慢慢侵入日常生活方方面面，支付越来越方便的我们离“刷脸”吃饭也不远了，全面屏、双摄不再是秘密，合约机不再是只赠送话费流量，而是拥有AI变焦、人脸解锁、随行翻译的性能怪兽，这么强势的配置，让人想不买都难啊！
+									</span>
+								</div>
+								<div class="box_bd">
+									<figure class="top">
+										<a href="" target="_blank">
+											<img src="https://img10.360buyimg.com/mobilecms/s350x128_jfs/t21343/225/1606301658/82626/daaebea6/5b2cb071N4ee5b6d4.jpg!q90!cc_350x128" alt="" />
+										</a>
+									</figure>
+									<figure class="center">
+										<a href="" target="_blank">
+											<img src="https://img10.360buyimg.com/mobilecms/s105x105_jfs/t23149/107/341248230/103412/c55a5776/5b2cb0b6N8cbfe7a9.jpg!q90"/>
+										</a>
+										<a href="" target="_blank">
+											<img src="https://img20.360buyimg.com/mobilecms/s105x105_jfs/t20839/254/1546537897/62073/50e6c945/5b2cb935N7e1a9c3b.jpg!q90"/>
+										</a>
+										<a href="" target="_blank">
+											<img src="https://img14.360buyimg.com/mobilecms/s105x105_jfs/t17506/101/242676688/197517/ae7bcb08/5a65a650N00dde708.jpg!q90"/>
+										</a>
+										
+									</figure>
+									<h2>
+										相约下午茶，醇香酸奶撩拨嘴巴
+									</h2>
+									<span>
+										对于上班族来说，每天的下午茶时光格外的让人期待，可以将自己准备的零食拿出来放肆的品尝一下了，如果不知道吃些什么才好，那么不如试试下面这些酸奶，醇香的滋味在嘴巴里回荡，补充能量，满足你的口腹之欲。
+									</span>
+								</div>
+							</div>
 						</div>
 						<div class="bullet_wrap">
 							<div class="bullet focus"></div>
@@ -496,65 +612,121 @@
 								<span>前往领券中心</span>
 							</a>
 						</div>
-						<div class="box_bd">
-							<ul>
-								<li>
-									<a href="" target="_blank">
-										<figure>
-											<img src="https://img11.360buyimg.com/babel/s70x70_jfs/t1/5679/39/9500/33091/5baccb9dE09474c17/24b03f96a35c6a7e.jpg!q90!cc_70x70.webp" alt="" />
-										</figure>
-										<div class="content">
-											<div class="icon_price">
-												￥<span>100</span>
+						<div class="lingQuan_overflow">
+							<div class="box_bd">
+								<ul>
+									<li>
+										<a href="" target="_blank">
+											<figure>
+												<img src="https://img10.360buyimg.com/babel/s70x70_jfs/t27652/239/998806915/21708/c3bd92b9/5bbde5fdNbcf8130d.jpg!q90!cc_70x70" alt="" />
+											</figure>
+											<div class="content">
+												<div class="icon_price">
+													￥<span>5</span>
+												</div>
+												<h3>满105元可用</h3>
+												<p class="elip">全品类通用券（除特殊商品）【10/11/12/13点限量抢】</p>
 											</div>
-											<h3>满199元可用</h3>
-											<p class="elip">限金龙鱼等品牌部分商品【金龙鱼神券日】</p>
-										</div>
-										<div class="doMore">
-											更多精选好券
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="" target="_blank">
-										<figure>
-											<img src="https://img11.360buyimg.com/babel/s70x70_jfs/t1/5679/39/9500/33091/5baccb9dE09474c17/24b03f96a35c6a7e.jpg!q90!cc_70x70.webp" alt="" />
-										</figure>
-										<div class="content">
-											<div class="icon_price">
-												￥<span>100</span>
+											<div class="doMore">
+												更多精选好券
 											</div>
-											<h3>满199元可用</h3>
-											<p class="elip">限金龙鱼等品牌部分商品【金龙鱼神券日】</p>
-										</div>
-										<div class="doMore">
-											更多精选好券
-										</div>
-									</a>
-								</li>
-								<li>
-									<a href="" target="_blank">
-										<figure>
-											<img src="https://img11.360buyimg.com/babel/s70x70_jfs/t1/5679/39/9500/33091/5baccb9dE09474c17/24b03f96a35c6a7e.jpg!q90!cc_70x70.webp" alt="" />
-										</figure>
-										<div class="content">
-											<div class="icon_price">
-												￥<span>100</span>
+										</a>
+									</li>
+									<li>
+										<a href="" target="_blank">
+											<figure>
+												<img src="https://img12.360buyimg.com/babel/s70x70_jfs/t8209/267/1272552181/105457/82ec3aa1/59b65230N59064607.jpg!q90!cc_70x70" alt="" />
+											</figure>
+											<div class="content">
+												<div class="icon_price">
+													￥<span>500</span>
+												</div>
+												<h3>满5000元可用</h3>
+												<p class="elip">百乐满旗舰店</p>
+											</div>	
+											<div class="doMore">
+												更多精选好券
 											</div>
-											<h3>满199元可用</h3>
-											<p class="elip">限金龙鱼等品牌部分商品【金龙鱼神券日】</p>
-										</div>
-										<div class="doMore">
-											更多精选好券
-										</div>
-									</a>
-								</li>
-							</ul>
-							<ul class="bullet_wrap">
-								<li class="bullet focus"></li>
-								<li class="bullet"></li>
-							</ul>
+										</a>
+									</li>
+									<li>
+										<a href="" target="_blank">
+											<figure>
+												<img src="https://img10.360buyimg.com/babel/s70x70_jfs/t23974/55/2368534537/219662/1f8fde8a/5b7d05b0N8cace176.jpg!q90!cc_70x70" alt="" />
+											</figure>
+											<div class="content">
+												<div class="icon_price">
+													￥<span>100</span>
+												</div>
+												<h3>满2299元可用</h3>
+												<p class="elip">仅可以购买小米商品部分</p>
+											</div>
+											<div class="doMore">
+												更多精选好券
+											</div>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="" target="_blank">
+											<figure>
+												<img src="https://img10.360buyimg.com/babel/s70x70_jfs/t24418/6/1867476421/119993/a9376ed/5b6c1172N1cdd3664.jpg!q90!cc_70x70" alt="" />
+											</figure>
+											<div class="content">
+												<div class="icon_price">
+													￥<span>30</span>
+												</div>
+												<h3>满99元可用</h3>
+												<p class="elip">茅台部分商品</p>
+											</div>
+											<div class="doMore">
+												更多精选好券
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="" target="_blank">
+											<figure>
+												<img src="https://img13.360buyimg.com/babel/s70x70_jfs/t25963/202/967892693/264254/1d587624/5b83c947N5f0ba604.jpg!q90!cc_70x70" alt="" />
+											</figure>
+											<div class="content">
+												<div class="icon_price">
+													￥<span>100</span>
+												</div>
+												<h3>满199元可用</h3>
+												<p class="elip">多尼利旗舰店</p>
+											</div>
+											<div class="doMore">
+												更多精选好券
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="" target="_blank">
+											<figure>
+												<img src="https://img13.360buyimg.com/babel/s70x70_jfs/t24955/8/1299679166/301003/e62176e/5b90f343N385d6600.jpg!q90!cc_70x70" alt="" />
+											</figure>
+											<div class="content">
+												<div class="icon_price">
+													￥<span>50</span>
+												</div>
+												<h3>满99元可用</h3>
+												<p class="elip">南极人家纺【冬被69元/枕头19元抢】</p>
+											</div>
+											<div class="doMore">
+												更多精选好券
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
 						</div>
+						
+						<ul class="bullet_wrap">
+							<li class="bullet focus"></li>
+							<li class="bullet"></li>
+						</ul>
 					</div>
 				</section>
 				<section class="wrap">
@@ -568,20 +740,53 @@
 								<span>探索生活</span>
 							</a>
 						</div>
-						<div class="box_bd">
-							<a href="" target="_blank">
-								<figure class="top">
-										<img src="https://img11.360buyimg.com/mobilecms/s350x250_jfs/t1/4155/14/6239/44004/5ba1eda2E795a0899/0cb83abec5edd629.jpg!q90!cc_350x250.webp" alt="" />
-								</figure>
-								
-								<h3>
-									vivo的美颜暴击！vivo X23上手评测
-								</h3>
-								<span>
-									vivo跟OPPO也是老冤家了，两者打得有来有回，你方唱罢我方登场，在今年的手机舞台上演了好几出大戏。这边vivo出个无界全面屏，那边OPPO赶紧出了个Find X，你来我往，各不相让。
-								</span>
-							</a>
+						<div class="miMe_overflow">
+							<div class="miMe_move">
+								<div class="box_bd">
+									<a href="" target="_blank">
+										<figure class="top">
+												<img src="https://img11.360buyimg.com/mobilecms/s350x250_jfs/t27529/7/808303113/66066/64249549/5bb98e65N06558096.jpg!q90!cc_350x250" alt="" />
+										</figure>
+										
+										<h3>
+											拯救节后综合征，HelloKitty手机壳治愈少女心
+										</h3>
+										<span>
+											不知道你现在追女生，是否也是热衷于送花松巧克力呢，我告诉你，这样的礼物是没有多少女孩子会喜欢的，因为花朵容易枯萎招虫子，而巧克力呢，吃多了又容易发胖，所以想要好好地讨女生欢心，你得要真正地送她所需要的东西哦。
+										</span>
+									</a>
+								</div>
+								<div class="box_bd">
+									<a href="" target="_blank">
+										<figure class="top">
+												<img src="https://img12.360buyimg.com/mobilecms/s350x250_jfs/t26176/284/521864251/35394/8a4fc2fe/5bb07835N21ac20fc.jpg!q90!cc_350x250" alt="" />
+										</figure>
+										
+										<h3>
+											不容错过！小仙女迷倒男神的全面攻略！
+										</h3>
+										<span>
+											随着天气渐渐入秋，也便代表着我们的开学季近了。将要再次踏入校园的各位小仙女可别忘了打扮自己。
+										</span>
+									</a>
+								</div>
+								<div class="box_bd">
+									<a href="" target="_blank">
+										<figure class="top">
+												<img src="https://img11.360buyimg.com/mobilecms/s350x250_jfs/t26542/58/858105767/214678/d9c375c2/5bbad911N9d1bea0c.jpeg!q90!cc_350x250" alt="" />
+										</figure>
+										
+										<h3>
+											给地板进行全面清洁，让地面光洁不留痕
+										</h3>
+										<span>
+											地板是家里最重要的活动场所，光脚踩在干净光滑的地板上，挣脱鞋袜的束缚似乎一整天的疲惫也被踩在了脚下。但一不小心踩中地板上留下的水渍、灰尘、毛发都会坏了你的好心情哦~今天介绍几个地板清洁工具与技巧，让地面光洁不留痕。
+										</span>
+									</a>
+								</div>
+							</div>
 						</div>
+						
 						<div class="bullet_wrap">
 							<div class="bullet focus"></div>
 							<div class="bullet"></div>
@@ -654,18 +859,18 @@
 						<div class="box_bd">
 							<figure class="top">
 								<a href="" target="_blank">
-									<img src="https://img13.360buyimg.com/babel/s350x250_jfs/t24766/152/694864697/36540/4544a9fb/5b790be4N32c0383c.jpg!q90!cc_350x250.webp" alt="" />
+									<img src="https://img13.360buyimg.com/babel/s350x250_jfs/t27352/28/864440509/15773/aa26c9d1/5bbb1272N58e7e557.jpg!q90!cc_350x250" alt="" />
 								</a>
 							</figure>
 							<figure class="center">
 								<a href="" target="_blank">
-									<img src="https://img11.360buyimg.com/babel/s110x110_jfs/t26092/302/704312335/8036/7be4d63c/5b790c2aN9fd185a5.jpg!q90!cc_110x110.webp"/>
+									<img src="https://img11.360buyimg.com/babel/s110x110_jfs/t25267/102/1769987788/7372/5c55a2a6/5bbb1313Nd9fa099e.jpg!q90!cc_110x110"/>
 								</a>
 								<a href="" target="_blank">
 									<img src="https://img12.360buyimg.com/mobilecms/s105x105_jfs/t23476/36/483265029/73910/2678b578/5b30b517N3c1f465e.jpg!q90"/>
 								</a>
 								<a href="" target="_blank">
-									<img src="https://img11.360buyimg.com/babel/s110x110_jfs/t26092/302/704312335/8036/7be4d63c/5b790c2aN9fd185a5.jpg!q90!cc_110x110.webp"/>
+									<img src="https://img11.360buyimg.com/babel/s110x110_jfs/t25321/249/1766407509/28536/8908c54b/5bbb12caN946073cd.jpg!q90!cc_110x110"/>
 								</a>
 								
 							</figure>
@@ -923,13 +1128,13 @@
 								</figure>
 								<figure class="center">
 									<a href="" target="_blank">
-										<img src="https://img13.360buyimg.com/mobilecms/s100x100_jfs/t19891/110/806672498/241370/5f1846b1/5b0ae763N30fef370.jpg!q90!cc_100x100.webp"/>
+										<img src="https://img11.360buyimg.com/mobilecms/s100x100_jfs/t20932/162/2420978168/97507/fa7120ee/5b57e142N1275ff69.jpg!q90!cc_100x100"/>
 									</a>
 									<a href="" target="_blank">
-										<img src="https://img10.360buyimg.com/mobilecms/s100x100_jfs/t9064/6/1520239832/379868/af74ce3d/59ba3fedNb71be1ba.jpg!q90!cc_100x100.webp"/>
+										<img src="https://img12.360buyimg.com/mobilecms/s100x100_jfs/t3586/172/955140469/150635/b6609c93/5817ff80N906bad34.jpg!q90!cc_100x100"/>
 									</a>
 									<a href="" target="_blank">
-										<img src="https://img10.360buyimg.com/mobilecms/s100x100_jfs/t19837/20/406482042/92221/722c00ab/5af3bfe1Ncd91649e.jpg!q90!cc_100x100.webp"/>
+										<img src="https://img13.360buyimg.com/mobilecms/s100x100_jfs/t3379/300/654520012/127094/8ce335e5/5811c2c5N1a5ca140.jpg!q90!cc_100x100"/>
 									</a>
 									
 								</figure>
@@ -1139,7 +1344,7 @@
 										<img src="https://img30.360buyimg.com/cms/s130x45_jfs/t24160/9/1324029213/5891/cf0e4978/5b5a98f0Ne8b6c8a8.jpg!q90"/>
 									</figure>
 									<p>
-										中国特产·湘西馆
+										NIHAO旗舰店
 									</p>
 								</a>
 							</div>
@@ -1151,13 +1356,13 @@
 								</figure>
 								<figure class="center">
 									<a href="" target="_blank">
-										<img src="https://img14.360buyimg.com/mobilecms/s100x100_jfs/t7066/164/2361022407/267934/4c5a283c/5994fd46Nfbfbae72.jpg!q90!cc_100x100.webp"/>
+										<img src="https://img30.360buyimg.com/mobilecms/s100x100_jfs/t6115/231/4776014566/256685/ea1df2b4/5966c8e5N390acb7c.jpg!q90!cc_100x100"/>
 									</a>
 									<a href="" target="_blank">
-										<img src="https://img14.360buyimg.com/mobilecms/s100x100_jfs/t1/976/25/8899/97916/5baa1ad6Ec8969b1f/fbf5a33624de2cfd.jpg!q90!cc_100x100.webp"/>
+										<img src="https://img11.360buyimg.com/mobilecms/s100x100_jfs/t6199/25/524942449/111618/4fc009a/594092a2Nfaf2424b.jpg!q90!cc_100x100"/>
 									</a>
 									<a href="" target="_blank">
-										<img src="https://img12.360buyimg.com/mobilecms/s100x100_jfs/t25600/115/529009384/268510/a014641f/5b73d225Nce573492.jpg!q90!cc_100x100.webp"/>
+										<img src="https://img30.360buyimg.com/mobilecms/s100x100_jfs/t21466/184/499517791/157649/9707ef3a/5b0f7378N2481fbee.jpg!q90!cc_100x100"/>
 									</a>
 									
 								</figure>
@@ -1182,13 +1387,13 @@
 								</figure>
 								<figure class="center">
 									<a href="" target="_blank">
-										<img src="https://img13.360buyimg.com/mobilecms/s100x100_jfs/t19891/110/806672498/241370/5f1846b1/5b0ae763N30fef370.jpg!q90!cc_100x100.webp"/>
+										<img src="https://img30.360buyimg.com/babel/s110x110_jfs/t1/1894/9/8704/16874/5ba9d16dEfdf61e90/1a2a09b77957eb91.jpg!q90!cc_110x110"/>
 									</a>
 									<a href="" target="_blank">
-										<img src="https://img10.360buyimg.com/mobilecms/s100x100_jfs/t9064/6/1520239832/379868/af74ce3d/59ba3fedNb71be1ba.jpg!q90!cc_100x100.webp"/>
+										<img src="https://img14.360buyimg.com/babel/s110x110_jfs/t1/255/16/8890/21534/5ba9d40fEa44dd83d/ed6b11d2b2bcec2b.jpg!q90!cc_110x110"/>
 									</a>
 									<a href="" target="_blank">
-										<img src="https://img10.360buyimg.com/mobilecms/s100x100_jfs/t19837/20/406482042/92221/722c00ab/5af3bfe1Ncd91649e.jpg!q90!cc_100x100.webp"/>
+										<img src="https://img13.360buyimg.com/babel/s110x110_jfs/t1/3774/14/8529/32693/5ba9d087E104f2f3c/1fdfc0f8b5c0cbe1.jpg!q90!cc_110x110"/>
 									</a>
 									
 								</figure>
@@ -1305,12 +1510,12 @@
 								</a>
 								<a href="" target="_blank">
 									<figure>
-										<img src="https://img10.360buyimg.com/babel/s170x180_jfs/t1/1389/23/9294/62461/5bac6c35E79e43590/5343a0c72d78f307.jpg!q90!cc_170x180" alt="" />
+										<img src="https://img20.360buyimg.com/babel/s170x180_jfs/t1/5321/20/2215/74145/5b961295E05a4de69/a96b6b26cf5cf7bd.jpg!q90!cc_170x180" alt="" />
 									</figure>
 								</a>
 								<a href="" target="_blank">
 									<figure>
-										<img src="https://img12.360buyimg.com/babel/s170x180_jfs/t1/344/25/9183/63886/5bab43faE0d1cc38e/f8f8d86b6566d0f6.jpg!q90!cc_170x180" alt="" />
+										<img src="https://img12.360buyimg.com/babel/s170x180_jfs/t20284/261/2040135290/69540/81c7c065/5b43397aNed838c28.jpg!q90!cc_170x180" alt="" />
 									</figure>
 								</a>
 							</div>
@@ -1337,13 +1542,13 @@
 								</figure>
 								<figure class="center">
 									<a href="" target="_blank">
-										<img src="https://img13.360buyimg.com/mobilecms/s100x100_jfs/t19891/110/806672498/241370/5f1846b1/5b0ae763N30fef370.jpg!q90!cc_100x100.webp"/>
+										<img src="https://img20.360buyimg.com/mobilecms/s100x100_jfs/t25867/214/1719083921/198654/51d799b7/5bbab399N967bf716.jpg!q90!cc_100x100"/>
 									</a>
 									<a href="" target="_blank">
-										<img src="https://img10.360buyimg.com/mobilecms/s100x100_jfs/t9064/6/1520239832/379868/af74ce3d/59ba3fedNb71be1ba.jpg!q90!cc_100x100.webp"/>
+										<img src="https://img11.360buyimg.com/mobilecms/s100x100_jfs/t26398/150/813377682/306398/dca75248/5bb87174Nf7a6630d.jpg!q90!cc_100x100"/>
 									</a>
 									<a href="" target="_blank">
-										<img src="https://img10.360buyimg.com/mobilecms/s100x100_jfs/t19837/20/406482042/92221/722c00ab/5af3bfe1Ncd91649e.jpg!q90!cc_100x100.webp"/>
+										<img src="https://img13.360buyimg.com/mobilecms/s100x100_jfs/t7567/143/4341401062/288870/47c1cbc5/5bb86f08N4bab239f.jpg!q90!cc_100x100"/>
 									</a>
 								</figure>
 							</div>
@@ -1367,10 +1572,10 @@
 								<h4>装修达人  · <span>装修不求人</span></h4>
 								<div class="imgbox">
 									<figure>
-										<img src="https://img14.360buyimg.com/babel/s130x130_jfs/t3322/23/871776204/323875/c913ec66/5816a254N1aa301f0.jpg!q90!cc_130x130" alt="" />
+										<img src="https://img10.360buyimg.com/babel/s130x130_jfs/t9811/274/1004087359/128060/fed9aed3/59db612fN8d50ec9c.jpg!q90!cc_130x130" alt="" />
 									</figure>
 									<figure>
-										<img src="https://img14.360buyimg.com/babel/s130x130_jfs/t3322/23/871776204/323875/c913ec66/5816a254N1aa301f0.jpg!q90!cc_130x130" alt="" />
+										<img src="https://img11.360buyimg.com/babel/s130x130_jfs/t16696/272/1070611200/242062/e897a30a/5ab9f5bbNbed211ef.jpg!q90!cc_130x130" alt="" />
 									</figure>
 								</div>
 							</a>
@@ -1402,126 +1607,8 @@
 					JOY寻宝
 				</h2>
 				<section class="wrap clear">
-					<div class="xunBao_box">
-						<a href="" target="_blank" title="机不离手">
-							<figure>
-								<img src="https://img14.360buyimg.com/mobile/s390x100_jfs/t18664/278/1968320175/39858/9f674110/5adddc0aNeebd9ed5.jpg!q90!cc_390x100"/>
-							</figure>
-							<h4>机不离手 · <span>手机心水尖货</span></h4>
-							<div class="mask"></div>
-							<ul class="clear">
-								<li>
-									<img src="https://img11.360buyimg.com/babel/s110x110_jfs/t16633/2/1810064749/37458/757adc8c/5ad85ba9Nf8536de0.jpg!q90!cc_110x110"/>
-								</li>
-								<li>
-									<img src="https://img11.360buyimg.com/babel/s110x110_jfs/t16633/2/1810064749/37458/757adc8c/5ad85ba9Nf8536de0.jpg!q90!cc_110x110"/>
-								</li>
-								<li>
-									<img src="https://img11.360buyimg.com/babel/s110x110_jfs/t16633/2/1810064749/37458/757adc8c/5ad85ba9Nf8536de0.jpg!q90!cc_110x110"/>
-								</li>
-							</ul>
-						</a>
-					</div>
-					<div class="xunBao_box">
-						<a href="" target="_blank" title="机不离手">
-							<figure>
-								<img src="https://img14.360buyimg.com/mobile/s390x100_jfs/t18664/278/1968320175/39858/9f674110/5adddc0aNeebd9ed5.jpg!q90!cc_390x100"/>
-							</figure>
-							<h4>机不离手 · <span>手机心水尖货</span></h4>
-							<div class="mask"></div>
-							<ul class="clear">
-								<li>
-									<img src="https://img11.360buyimg.com/babel/s110x110_jfs/t16633/2/1810064749/37458/757adc8c/5ad85ba9Nf8536de0.jpg!q90!cc_110x110"/>
-								</li>
-								<li>
-									<img src="https://img11.360buyimg.com/babel/s110x110_jfs/t16633/2/1810064749/37458/757adc8c/5ad85ba9Nf8536de0.jpg!q90!cc_110x110"/>
-								</li>
-								<li>
-									<img src="https://img11.360buyimg.com/babel/s110x110_jfs/t16633/2/1810064749/37458/757adc8c/5ad85ba9Nf8536de0.jpg!q90!cc_110x110"/>
-								</li>
-							</ul>
-						</a>
-					</div>
-					<div class="xunBao_box" style="margin: 0;">
-						<a href="" target="_blank" title="机不离手">
-							<figure>
-								<img src="https://img14.360buyimg.com/mobile/s390x100_jfs/t18664/278/1968320175/39858/9f674110/5adddc0aNeebd9ed5.jpg!q90!cc_390x100"/>
-							</figure>
-							<h4>机不离手 · <span>手机心水尖货</span></h4>
-							<div class="mask"></div>
-							<ul class="clear">
-								<li>
-									<img src="https://img11.360buyimg.com/babel/s110x110_jfs/t16633/2/1810064749/37458/757adc8c/5ad85ba9Nf8536de0.jpg!q90!cc_110x110"/>
-								</li>
-								<li>
-									<img src="https://img11.360buyimg.com/babel/s110x110_jfs/t16633/2/1810064749/37458/757adc8c/5ad85ba9Nf8536de0.jpg!q90!cc_110x110"/>
-								</li>
-								<li>
-									<img src="https://img11.360buyimg.com/babel/s110x110_jfs/t16633/2/1810064749/37458/757adc8c/5ad85ba9Nf8536de0.jpg!q90!cc_110x110"/>
-								</li>
-							</ul>
-						</a>
-					</div>
-					<div class="xunBao_box">
-						<a href="" target="_blank" title="机不离手">
-							<figure>
-								<img src="https://img14.360buyimg.com/mobile/s390x100_jfs/t18664/278/1968320175/39858/9f674110/5adddc0aNeebd9ed5.jpg!q90!cc_390x100"/>
-							</figure>
-							<h4>机不离手 · <span>手机心水尖货</span></h4>
-							<div class="mask"></div>
-							<ul class="clear">
-								<li>
-									<img src="https://img11.360buyimg.com/babel/s110x110_jfs/t16633/2/1810064749/37458/757adc8c/5ad85ba9Nf8536de0.jpg!q90!cc_110x110"/>
-								</li>
-								<li>
-									<img src="https://img11.360buyimg.com/babel/s110x110_jfs/t16633/2/1810064749/37458/757adc8c/5ad85ba9Nf8536de0.jpg!q90!cc_110x110"/>
-								</li>
-								<li>
-									<img src="https://img11.360buyimg.com/babel/s110x110_jfs/t16633/2/1810064749/37458/757adc8c/5ad85ba9Nf8536de0.jpg!q90!cc_110x110"/>
-								</li>
-							</ul>
-						</a>
-					</div>
-					<div class="xunBao_box">
-						<a href="" target="_blank" title="机不离手">
-							<figure>
-								<img src="https://img14.360buyimg.com/mobile/s390x100_jfs/t18664/278/1968320175/39858/9f674110/5adddc0aNeebd9ed5.jpg!q90!cc_390x100"/>
-							</figure>
-							<h4>机不离手 · <span>手机心水尖货</span></h4>
-							<div class="mask"></div>
-							<ul class="clear">
-								<li>
-									<img src="https://img11.360buyimg.com/babel/s110x110_jfs/t16633/2/1810064749/37458/757adc8c/5ad85ba9Nf8536de0.jpg!q90!cc_110x110"/>
-								</li>
-								<li>
-									<img src="https://img11.360buyimg.com/babel/s110x110_jfs/t16633/2/1810064749/37458/757adc8c/5ad85ba9Nf8536de0.jpg!q90!cc_110x110"/>
-								</li>
-								<li>
-									<img src="https://img11.360buyimg.com/babel/s110x110_jfs/t16633/2/1810064749/37458/757adc8c/5ad85ba9Nf8536de0.jpg!q90!cc_110x110"/>
-								</li>
-							</ul>
-						</a>
-					</div>
-					<div class="xunBao_box" style="margin: 0;">
-						<a href="" target="_blank" title="机不离手">
-							<figure>
-								<img src="https://img14.360buyimg.com/mobile/s390x100_jfs/t18664/278/1968320175/39858/9f674110/5adddc0aNeebd9ed5.jpg!q90!cc_390x100"/>
-							</figure>
-							<h4>机不离手 · <span>手机心水尖货</span></h4>
-							<div class="mask"></div>
-							<ul class="clear">
-								<li>
-									<img src="https://img11.360buyimg.com/babel/s110x110_jfs/t16633/2/1810064749/37458/757adc8c/5ad85ba9Nf8536de0.jpg!q90!cc_110x110"/>
-								</li>
-								<li>
-									<img src="https://img11.360buyimg.com/babel/s110x110_jfs/t16633/2/1810064749/37458/757adc8c/5ad85ba9Nf8536de0.jpg!q90!cc_110x110"/>
-								</li>
-								<li>
-									<img src="https://img11.360buyimg.com/babel/s110x110_jfs/t16633/2/1810064749/37458/757adc8c/5ad85ba9Nf8536de0.jpg!q90!cc_110x110"/>
-								</li>
-							</ul>
-						</a>
-					</div>
+					<img src="images/jiazai.gif" style=" margin: 50px auto;"/>
+						
 				</section>
 				
 			</section>
@@ -1676,7 +1763,9 @@
 					还没逛够
 				</h2>
 				<ul class="wrap_noH clear">
-					<li>
+					<img src="images/jiazai.gif" alt=""  style="margin: 0 auto; padding: 100px; padding-top: 50px;"/>
+					
+					<!--<li>
 						<a href="" target="_blank" title="惠普（HP）暗影精灵4代 15.6英寸游戏笔记本电脑（i5-8300H 8G 128G+1TB GTX1060 6G 144Hz G-Sync IPS）">
 							<figure>
 								<img src="https://img11.360buyimg.com/jdcms/s170x170_jfs/t25039/206/1101889435/217645/66f4fbf7/5b89057dN7c68cbed.jpg!q90!cc_170x170.webp"/>
@@ -1688,124 +1777,7 @@
 								￥<span>8199.00</span>
 							</div>
 						</a>
-					</li>
-					<li>
-						<a href="" target="_blank" title="惠普（HP）暗影精灵4代 15.6英寸游戏笔记本电脑（i5-8300H 8G 128G+1TB GTX1060 6G 144Hz G-Sync IPS）">
-							<figure>
-								<img src="https://img11.360buyimg.com/jdcms/s170x170_jfs/t25039/206/1101889435/217645/66f4fbf7/5b89057dN7c68cbed.jpg!q90!cc_170x170.webp"/>
-							</figure>
-							<p>
-								惠普（HP）暗影精灵4代 15.6英寸游戏笔记本电脑（i5-8300H 8G 128G+1TB GTX1060 6G 144Hz G-Sync IPS）
-							</p>
-							<div class="price">
-								￥<span>8199.00</span>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="" target="_blank" title="惠普（HP）暗影精灵4代 15.6英寸游戏笔记本电脑（i5-8300H 8G 128G+1TB GTX1060 6G 144Hz G-Sync IPS）">
-							<figure>
-								<img src="https://img11.360buyimg.com/jdcms/s170x170_jfs/t25039/206/1101889435/217645/66f4fbf7/5b89057dN7c68cbed.jpg!q90!cc_170x170.webp"/>
-							</figure>
-							<p>
-								惠普（HP）暗影精灵4代 15.6英寸游戏笔记本电脑（i5-8300H 8G 128G+1TB GTX1060 6G 144Hz G-Sync IPS）
-							</p>
-							<div class="price">
-								￥<span>8199.00</span>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="" target="_blank" title="惠普（HP）暗影精灵4代 15.6英寸游戏笔记本电脑（i5-8300H 8G 128G+1TB GTX1060 6G 144Hz G-Sync IPS）">
-							<figure>
-								<img src="https://img11.360buyimg.com/jdcms/s170x170_jfs/t25039/206/1101889435/217645/66f4fbf7/5b89057dN7c68cbed.jpg!q90!cc_170x170.webp"/>
-							</figure>
-							<p>
-								惠普（HP）暗影精灵4代 15.6英寸游戏笔记本电脑（i5-8300H 8G 128G+1TB GTX1060 6G 144Hz G-Sync IPS）
-							</p>
-							<div class="price">
-								￥<span>8199.00</span>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="" target="_blank" title="惠普（HP）暗影精灵4代 15.6英寸游戏笔记本电脑（i5-8300H 8G 128G+1TB GTX1060 6G 144Hz G-Sync IPS）">
-							<figure>
-								<img src="https://img11.360buyimg.com/jdcms/s170x170_jfs/t25039/206/1101889435/217645/66f4fbf7/5b89057dN7c68cbed.jpg!q90!cc_170x170.webp"/>
-							</figure>
-							<p>
-								惠普（HP）暗影精灵4代 15.6英寸游戏笔记本电脑（i5-8300H 8G 128G+1TB GTX1060 6G 144Hz G-Sync IPS）
-							</p>
-							<div class="price">
-								￥<span>8199.00</span>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="" target="_blank" title="惠普（HP）暗影精灵4代 15.6英寸游戏笔记本电脑（i5-8300H 8G 128G+1TB GTX1060 6G 144Hz G-Sync IPS）">
-							<figure>
-								<img src="https://img11.360buyimg.com/jdcms/s170x170_jfs/t25039/206/1101889435/217645/66f4fbf7/5b89057dN7c68cbed.jpg!q90!cc_170x170.webp"/>
-							</figure>
-							<p>
-								惠普（HP）暗影精灵4代 15.6英寸游戏笔记本电脑（i5-8300H 8G 128G+1TB GTX1060 6G 144Hz G-Sync IPS）
-							</p>
-							<div class="price">
-								￥<span>8199.00</span>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="" target="_blank" title="惠普（HP）暗影精灵4代 15.6英寸游戏笔记本电脑（i5-8300H 8G 128G+1TB GTX1060 6G 144Hz G-Sync IPS）">
-							<figure>
-								<img src="https://img11.360buyimg.com/jdcms/s170x170_jfs/t25039/206/1101889435/217645/66f4fbf7/5b89057dN7c68cbed.jpg!q90!cc_170x170.webp"/>
-							</figure>
-							<p>
-								惠普（HP）暗影精灵4代 15.6英寸游戏笔记本电脑（i5-8300H 8G 128G+1TB GTX1060 6G 144Hz G-Sync IPS）
-							</p>
-							<div class="price">
-								￥<span>8199.00</span>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="" target="_blank" title="惠普（HP）暗影精灵4代 15.6英寸游戏笔记本电脑（i5-8300H 8G 128G+1TB GTX1060 6G 144Hz G-Sync IPS）">
-							<figure>
-								<img src="https://img11.360buyimg.com/jdcms/s170x170_jfs/t25039/206/1101889435/217645/66f4fbf7/5b89057dN7c68cbed.jpg!q90!cc_170x170.webp"/>
-							</figure>
-							<p>
-								惠普（HP）暗影精灵4代 15.6英寸游戏笔记本电脑（i5-8300H 8G 128G+1TB GTX1060 6G 144Hz G-Sync IPS）
-							</p>
-							<div class="price">
-								￥<span>8199.00</span>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="" target="_blank" title="惠普（HP）暗影精灵4代 15.6英寸游戏笔记本电脑（i5-8300H 8G 128G+1TB GTX1060 6G 144Hz G-Sync IPS）">
-							<figure>
-								<img src="https://img11.360buyimg.com/jdcms/s170x170_jfs/t25039/206/1101889435/217645/66f4fbf7/5b89057dN7c68cbed.jpg!q90!cc_170x170.webp"/>
-							</figure>
-							<p>
-								惠普（HP）暗影精灵4代 15.6英寸游戏笔记本电脑（i5-8300H 8G 128G+1TB GTX1060 6G 144Hz G-Sync IPS）
-							</p>
-							<div class="price">
-								￥<span>8199.00</span>
-							</div>
-						</a>
-					</li>
-					<li>
-						<a href="" target="_blank" title="惠普（HP）暗影精灵4代 15.6英寸游戏笔记本电脑（i5-8300H 8G 128G+1TB GTX1060 6G 144Hz G-Sync IPS）">
-							<figure>
-								<img src="https://img11.360buyimg.com/jdcms/s170x170_jfs/t25039/206/1101889435/217645/66f4fbf7/5b89057dN7c68cbed.jpg!q90!cc_170x170.webp"/>
-							</figure>
-							<p>
-								惠普（HP）暗影精灵4代 15.6英寸游戏笔记本电脑（i5-8300H 8G 128G+1TB GTX1060 6G 144Hz G-Sync IPS）
-							</p>
-							<div class="price">
-								￥<span>8199.00</span>
-							</div>
-						</a>
-					</li>
+					</li>-->
 					
 				</ul>
 			</section>
@@ -1871,15 +1843,76 @@
 					</div>
 				</div>
 				<div class="right_bigbox">
-					
+					<div class="huiyuan_box">
+						<h3 class="huiyuan_box_title">
+							<i></i>
+							<span>京东会员</span>
+							<em></em>
+						</h3>
+						<div class="big_content">
+							<div class="box1">
+								<div class="head">
+									<img src="https://i.jd.com/commons/img/no-img_mid_.jpg" alt="" class="head_img"/>
+									<div class="user_information">
+										<a href="" target="_blank">用户名</a><i class="yinpai"></i>
+										<div class="jingdongzhi"><i></i><span>京东值2917</span></div>
+									</div>
+								</div>
+								<div class="qiandao clear">
+									<a href="" target="_blank" class="huiyuanqiandao">会员签到领京豆</a>
+									<a href="" target="_blank" class="jinrongqiandao">金融会员签到</a>
+								</div>
+								<div class="caifu">
+									<div class="jingdou">
+										<span>338</span>
+										<div>京豆</div>
+									</div>
+									<div class="youhuiquan">
+										<span>4</span>
+										<div>优惠券</div>
+									</div>
+									<div class="gangbeng">
+										<span>0.00</span>
+										<div>钢镚</div>
+									</div>
+								</div>
+							</div>
+							<div class="box2">
+								<h3 class="plus_title"><span>会员PLUS</span></h3>
+								<div class="box2_wrap">
+									<div>
+										恭喜你获得会员PLUS<br />30天免费试用资格
+									</div>
+									<a href="" target="_blank">开始试用 ></a>
+								</div>
+							</div>
+							<div class="box2" id="box3">
+								<h3 class="plus_title"><span>金融会员</span></h3>
+								<div class="jinrong">
+									<div>
+										<i></i>
+										<div>小白信用</div>
+										<span>66.5</span>
+									</div>
+									<div>
+										<i></i>
+										<div>金币</div>
+										<span>0</span>
+									</div>
+									<div>
+										<i></i>
+										<div>金融卡券</div>
+										<span>0</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 			
 		</aside>
-		<script type="text/javascript" src="script/thirdplugins/jquery1.11.3.js"></script>
-		<script type="text/javascript" src="script/js/index.js">
-			
-		</script>
+		
 	</body>
 
 </html>

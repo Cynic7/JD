@@ -26,13 +26,14 @@
 }
 
 //秒杀项目列表
-.sk_body {float: left; margin-bottom:30px;position: relative;
+.sk_body_overflow{width: 800px; height: 275px; overflow: hidden; float: left;margin-bottom:30px;position: relative;}
+.sk_body {
      .sk_item{width: 200px;height: 275px; background: #FFFFFF; position: relative; overflow: hidden; float: left;
          a{height: 100%;display: block;
             &:hover img{opacity: 0.9;}
             &:hover p{color:#c81623;;}
          }
-         img {margin: 0 auto 15px; padding-top: 35px;}
+         img {margin: 0 auto 15px; padding-top: 35px; width: 140px; height: 140px;}
          &:after{content: '';display: block;position: absolute;top: 0;right: 0;width: 1px;height: 275px;background: #f0f0f0;}
          p{text-overflow: ellipsis;overflow: hidden;white-space: nowrap;    padding: 0 15px; color: #666;font-size: 12px; text-align: center;}
          .price{@include boxM(160,20,20); border: 1px #e6382f solid; line-height: 20px;font-size: 14px; text-align:center;}
@@ -40,9 +41,12 @@
          .price s{ color: #b7bcb8;font-size: 12px; }
      }
 }
-.sk_last { float: left; background:#fff; position: relative;
+.sk_last { float: left; background:#fff; position: relative; overflow: hidden;
          @include boxP(180,267.5,7.5,10);
-         img{ padding: 0;}
+         img{ padding: 0;width: 180px; height: 260px;}
+         .sk_last_wrap{
+             width: 180px*3;height: 260px; display: flex; position: absolute;left: 0; top: 0;
+         }
          .bullet_wrap_0 {width: 19px; position: absolute; left: 91px;bottom: 20px; display: flex; justify-content: space-between;}
          .bullet_0 {width: 6px; height: 6px; background: #c0c0c0; border-radius: 50%;}
          .active {background: #e33333!important;}

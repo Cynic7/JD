@@ -3,7 +3,7 @@
 .toolbar_wrap{
     position: fixed; right: 0; height: 100%; z-index: 999; top: 0;
     .toolbar_right{
-        height: 100%; width: 6px; background: #7a6e6e; position: absolute; right: 0;
+        height: 100%; width: 6px; background: #7a6e6e; position: absolute; right:0px;
     }
     .toolbar_content{
         
@@ -65,5 +65,65 @@
         &:hover{background-color: #c81623;}
         &:hover .textbox{ left: -60px;background-color: #c81623;}
         
+    }
+    .right_bigbox{
+        width: 270px; height: 100%; position: absolute; left: 6px; background: #eceaea;
+        .huiyuan_box{
+            .huiyuan_box_title{ line-height: 40px; padding: 0 10px; height: 40px;
+                    i{display: inline-block;width:18px;height: 19px;margin-bottom: -3px;margin-right: 3px; background: url("https://misc.360buyimg.com/mtd/pc/o2_toolbar/1.0.0/home/images/toolbars.png") no-repeat -94px -211px;}
+                    span{font-size: 16px; font-weight: normal;color: #5e5050;}
+                    em{float: right;width: 12px; height: 12px; background: url("https://misc.360buyimg.com/mtd/pc/o2_toolbar/1.0.0/home/images/toolbars.png") no-repeat 0 -250px;
+                          cursor: pointer; margin-top: 13px;transition:all 0.3s;&:hover{ transform: rotate(180deg);}
+                     }
+               }
+            .big_content{height:558px; overflow-y: auto;
+                .box1{background-color: #FFF;padding: 10px;}
+                .head{overflow: hidden;
+                    img{width: 65px; height: 65px; border-radius: 50%; float: left;}
+                    .user_information{float: left; margin-left: 10px;
+                        a{color: #333; font-size: 15px; line-height: 34px;}
+                        .yinpai{display: inline-block;width: 16px; height: 16px;background: url("https://static.360buyimg.com/vip_misc/vip2.0/pc/sideBar/1.0.6/images/sprite.png") no-repeat -156px -55px;margin-bottom: -3px; margin-left: 3px;}
+                        .jingdongzhi{ height: 18px; padding: 0 6px;background-color: #f03435;color: #fff;    border-radius: 9px; line-height: 18px; margin-top: 5px;
+                                i{display: inline-block;width:13px;height: 13px;background: url("https://static.360buyimg.com/vip_misc/vip2.0/pc/sideBar/1.0.6/images/sprite.png") no-repeat -143px -115px; margin-right: 3px; margin-bottom: -2px;}
+                            }
+                      }
+                  }
+               .qiandao{ margin-top: 10px;
+                   a{float: left;margin-right: 5px;padding: 3px 5px;line-height: 17px;border-radius: 3px;border: 1px solid #EEDFCD; &:hover{opacity: 0.8;}}
+                   .huiyuanqiandao{    border-color: #E8A2A8;
+                                        background-color: #FFF9F8;
+                                        color: #C71A29;}
+                   .jinrongqiandao{    border: 1px solid #EEDFCD;
+                                        background-color: #FDF8F1;
+                                        color: #B45616;}
+               }
+               .caifu{display: flex; margin-top: 10px;
+                    &>div{text-align: center;width: 33.3333%; border-right: 1px #eceaea dotted;&:last-of-type{border: 0;} &>div{margin-top: 5px; color:#999;} span{font-size: 14px;}}
+               }
+               .plus_title{text-align: center;padding: 0 10px;height: 22px;padding-top: 10px; font-size: 15px;position:relative; &:after{content:"";display: block; width: 90%; position: absolute; left: 5%; top: 68%;border-top: 1px dotted #ddd; z-index: 1;} 
+                            span{position: relative; z-index: 999; display:inline-block; padding: 0 10px; width: 82px; font-weight: normal;}
+                         }
+               .box2{margin-top: 8px; background: #fff; padding-bottom: 20px;
+                        .box2_wrap{text-align: center; margin-top: 15px;
+                                div{background: url("https://static.360buyimg.com/vip_misc/vip2.0/pc/sideBar/1.0.6/images/text-bg.png") no-repeat  center center;padding: 8px 0 0;
+                                    font-size: 13px;
+                                    line-height: 18px;
+                                    color: #B0692F;    height: 45px;}
+                                a{background-color: #7A6E6E; display: inline-block;width: 120px; color: #fff; &:hover{color: #C81623;} margin-top: 8px;}
+                            }
+                    }
+                #box3{
+                    .jinrong{display: flex; text-align: center; padding-top: 15px;
+                        &>div{width: 33.333%;cursor: pointer; i{display: inline-block; width: 29px; height: 19px; background: url("https://static.360buyimg.com/vip_misc/vip2.0/pc/sideBar/1.0.6/images/sprite.png") no-repeat 0 -140px; margin-bottom: 4px;}
+                            div{color: #999; margin-bottom: 3px;} span{display: inline-block;height: 16px; line-height: 16px; border-radius: 8px; font-size: 13px; padding: 0 5px; background: #FC545A; color: #fff;}
+                            &:nth-last-of-type(2) i{background-position: -97px -86px; width: 26px; height: 26px; margin-top: -4px; margin-bottom: 0;}
+                            &:nth-last-of-type(1) i{background-position: -88px -115px; width: 27px; height: 23px; margin-top: -4px;}
+                            &:hover div{color: #FC545A;}
+                        }
+                    }
+                }
+            }
+            
+        }
     }
 }

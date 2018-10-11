@@ -20,22 +20,26 @@
                 a{color: #666;}
                 .nav_active{color: #e33333;}
             }
-            .box_bd .item_list{padding: 0 20px;
+            .paiHangBan_wrap_overflow{width: 390px; height: 309px; overflow: hidden;position: relative;}
+            .paiHangBan_wrap_move{width: 390px*2; height: 309px; position: absolute;left: 0;display: flex;}
+            .paiHangBan_wrap_move:not(#move_0){display: none;}
+            .box_bd .item_list{padding: 0 20px; width: 390px; box-sizing: border-box; float: left;
                 li a{ display: block;}
-                li a img {float: left; margin-top: 19px;}
+                li a img {float: left; margin-top: 19px; width: 80px; height: 80px;}
                 li a span{@include boxM(30,40,34);float: left; margin-left: 10px; font-size: 32px; color:#e74240;;}
-                li a p {@include boxM(225,32,36);float: left; color: #333;}
+                li a p {@include boxM(225,35,36);float: left; color: #333; overflow: hidden;}
                 li:last-of-type {padding-bottom: 11px; border-bottom: 1px #eee solid;}
                 
             }
             .bullet_wrap{width: 34px; margin: 13px auto;}
         }
-        .lingQuan{@include moban(0);
-            .box_bd{padding: 0 20px;
+        .lingQuan{@include moban(0); .bullet_wrap {width: 34px; margin: 11px auto;}
+                  .lingQuan_overflow{margin: 0 20px; overflow: hidden; width: 350px; height: 345px; position: relative;}
+            .box_bd{ display: flex; position: absolute;left: 0;
                 a{
                     display: block; width: 350px; height: 115px; color: #666;background: #f6f6f6; 
                     border-radius: 6px;padding: 11px 10px;box-sizing:border-box; position: relative;
-                    figure{padding: 10px; border-radius: 50%; background: #fff; width: 70px; overflow: hidden;float: left;}
+                    figure{padding: 10px; border-radius: 50%; background: #fff; width: 70px; overflow: hidden;float: left; height: 70px;}
                     .content{padding-left: 8px; float: left;
                         div{height: 38px; line-height:38px;font-size: 14px;color:#e33333;
                             span{font-size: 34px;}
@@ -47,7 +51,7 @@
                 }
                 a:before{content: ""; @include yuan(); right: 60px; top:-8px;}
                 ul:first-of-type li:last-of-type a:after{content: "";@include yuan(); bottom:-8px; right:60px;}
-                .bullet_wrap {width: 34px; margin: 11px auto;}
+                
             }
         }
         #miMe {
@@ -56,13 +60,13 @@
             .bullet_wrap {margin-top: 15px;}
         }
         #faXianhaohuo{
-            .box_bd a{
+            .box_bd a{img{width: 110px; height: 110px;@include boxM(110,110);}
                 display: block; width: 175px; height: 184px; float: left; margin-top: 5px;
                 &:hover figure{opacity: 0.8;}
                 &:hover h3,&:hover span{color: #c81623!important;}
-                figure{@include boxM(110,110)}
-                h3{text-align: center;color: #3e8c96;margin-top: 20px;}
-                span{width: 100%; margin: 0; padding: 0 8px;line-height: 14px; color: #666; height: 14px; font-size: 12px; margin-top: 5px;}
+                figure{@include boxM(110,110);}
+                h3{text-align: center;color: #3e8c96;margin-top: 20px; width: 160px; overflow: hidden; white-space: nowrap; box-sizing: border-box; margin-left: 9px;}
+                span{width: 100%; margin: 0; padding: 0 8px;line-height: 14px; color: #666; height: 14px; font-size: 12px; margin-top: 5px; text-align: center;}
             }
         }
         
@@ -87,4 +91,8 @@
             .box_bd span{@include boxM(350,36,15);overflow: hidden;font-size: 14px; color: #666; line-height: 18px;}
             .bullet_wrap{width: 51px; margin: 19px auto;}
          }
+.huiMai_overflow{position: relative; width: 390px; height: 338px; overflow: hidden;}
+.huiMai_move{display: flex; width: 390px*3; height: 338px; position: absolute;left: -390px;}
 
+.miMe_overflow{position: relative; width: 390px; height: 338px; overflow: hidden;}
+.miMe_move{display: flex; width: 390px*3; height: 338px; position: absolute;left: -390px;}

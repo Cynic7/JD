@@ -4,25 +4,23 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <title>京东注册</title>
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/registor.css"/>
-
+		<script type="text/javascript" src="script/thirdplugins/require.js" defer async="true" data-main="script/js/reg.js"></script>
   </head>
   <body>
-  	<div class="page-header" style="padding: 0 60px;">
-	  <h1>
-	  	<div style="background: url(https://misc.360buyimg.com/user/reg-com/css/i/icon.png);
-	  		width: 150px; height: 49px; display: inline-block;"></div>
-	  	<small>用户注册</small>
-	  	<div class="pull-right" style="font-size: 16px; margin-top: 28px; color: #999;">
-	  		已有账号？<a href="javascript:;">请登录></a>
-	  	</div>
-	  </h1>
+  	<div class="page-header" style="padding: 24px 60px 35px;">
+		  <h1>
+		  	<div style="background: url(https://misc.360buyimg.com/user/reg-com/css/i/icon.png);
+		  		width: 150px; height: 49px; display: inline-block;"></div>
+		  	<small>用户注册</small>
+		  	<div class="pull-right" style="font-size: 16px; margin-top: 28px; color: #999;">
+		  		已有账号？<a href="javascript:;">请登录></a>
+		  	</div>
+		  </h1>
 	</div>
-  	<form action="" style="" class="container form1">
+  	<form action="http://10.31.162.78/JD/php/reg.php" class="container form1" method="post">
   		<div class="top_por">
   			<div class="pull-left">
   				<div  class="pro1">
@@ -53,33 +51,32 @@
   			</div>
   			
   		</div>
-  		<div class="input-group has-success has-feedback form-inline">
+  		<div class="input-group form-inline">
   			<div class="input-group-addon"><b>用户名:</b></div>
-  			<input type="text" class="form-control"/>
-  			<span class="glyphicon glyphicon-ok form-control-feedback pull-left"></span>
+  			<input type="text" class="form-control" name="username"/>
+  			<label id="username-error" class="error tishi validation" for="username" >6~18个字符，可使用字母、数字、下划线，需以字母开头</label>
   		</div>
-  		<div class="validation name_v">6~18个字符，可使用字母、数字、下划线，需以字母开头</div>
-  		
-  		<div class="input-group  has-feedback">
+
+  		<div class="input-group ">
   			<div class="input-group-addon"><b>密　码:</b></div>
-  			<input type="password" class="form-control" />
-  			<span class="glyphicon glyphicon-remove form-control-feedback"></span>
+  			<input type="password" class="form-control"  name="password" id="password"/>
+  			<label id="password-error" class="error tishi validation" for="password">6~16个字符，区分大小写</label>
   		</div>
-  		<div class="validation name_v">6~16个字符，区分大小写</div>
+
   		
-  		<div class="input-group has-error has-feedback " id="sure">
-  			<div class="input-group-addon"><b>确认密码</b></div>
-  			<input type="password" class="form-control" />
-  			<span class="glyphicon glyphicon-remove form-control-feedback"></span>
+  		<div class="input-group" id="sure">
+  			<div class="input-group-addon" id="qr"><b>确认密码:</b></div>
+  			<input type="password" class="form-control" name="repass" />
+  			<label id="repass-error" class="error tishi validation" for="repass">请再次填写密码</label>
   		</div>
-  		<div class="validation pas_repeat">请再次填写密码</div>
+
   		
-  		<div class="input-group has-feedback ">
+  		<div class="input-group  ">
   			<div class="input-group-addon"><b>邮　箱:</b></div>
-  			<input type="text" class="form-control"/>
-  			<span class="glyphicon glyphicon-ok form-control-feedback"></span>
+  			<input type="text" class="form-control" name="email"/>
+  			<label id="email-error" class="error tishi validation" for="email">请填写正确邮箱格式</label>
   		</div>
-  		<div class="validation name_v">请填写正确邮箱格式</div>
+
   		
   		<div class="center-block">
   			<label for="check">
@@ -87,8 +84,9 @@
 	  		</label>
   		</div>
   		<div>
-  			<input type="submit" class="btn btn-primary btn-lg" style="width:100%;" value="用户注册"/>
+  			<input type="submit"  name="submit" class="btn btn-primary btn-lg" style="width:450px; background: #c81623; color: #fff; padding: 0; text-align: center; cursor: pointer;" value="用户注册"/>
   		</div>
+  		
   	</form>
   	
   	<footer>
@@ -133,9 +131,6 @@
   		</div>
   	</footer>
   	
-    <script type="text/javascript">
-    	
-    </script>
   </body>
   
 </html>

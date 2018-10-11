@@ -42,7 +42,10 @@
 
 //第二列 轮播图
 .fs_col2{width: 590px; height: 470px; overflow: hidden; position: relative;float: left; margin-right: 10px;
-    figure{width: 1000%; height: 100%; position: absolute; display: flex;}
+    figure{width: 100%; height: 100%; position: relative;
+            a{position: absolute; left: 0; top: 0; opacity: 0;}
+            a:first-of-type{opacity: 1;}
+    }
     img{
         display: block; width: 590px; height: 100%;
     }
@@ -76,6 +79,7 @@
 .gonext{
      right: 0;
 }
+.goback{left: 0;}
 
 //第三列 图片广告三块
 .fs_col3{float: left; margin-right: 10px;
@@ -109,6 +113,7 @@
          a{padding: 0 10px; color: #666; &:hover{color: #e33333;} ;}
          p a:first-of-type{border-right: 1px #dfe0e1 solid;}
          .more{float: right;}
+         .cuxiao:nth-of-type(2){display: none;}
          .redline {    position: absolute;
                         bottom: -5px;
                         left: 10px;

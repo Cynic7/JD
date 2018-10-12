@@ -836,7 +836,7 @@ nav .treasure {
   z-index: 20;
   background: #fff;
   top: 0;
-  left: 192px;
+  left: 190px;
   box-shadow: 3px 6px 25px #c3c3c3;
   display: none;
 }
@@ -1272,6 +1272,11 @@ nav .treasure {
   position: relative;
 }
 
+.sk_body {
+  width: 4000px;
+  left: -800px;
+  position: absolute;
+}
 .sk_body .sk_item {
   width: 200px;
   height: 275px;
@@ -2037,9 +2042,23 @@ nav .treasure {
   height: 385px;
   position: relative;
 }
-.teSe .wrap ul {
+.teSe .wrap .teSe_overflow {
+  overflow: hidden;
+  position: relative;
+  width: 1190px;
+  height: 363px;
+}
+.teSe .wrap .flex_floatbox {
   display: flex;
   justify-content: space-between;
+  float: left;
+  width: 1190px;
+}
+.teSe .wrap ul {
+  width: 5950px;
+  position: absolute;
+  overflow: hidden;
+  left: -1190px;
 }
 .teSe .wrap ul li {
   background: #fff;
@@ -2058,9 +2077,17 @@ nav .treasure {
 }
 .teSe .wrap .bullet_wrap {
   display: block;
-  width: 68px;
+  width: 60px;
   margin: 15px auto 0;
   display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.teSe .wrap .gonext, .teSe .wrap .goback {
+  z-index: 15;
 }
 
 .zhiBo .wrap {

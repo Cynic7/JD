@@ -27,7 +27,7 @@
 
 //秒杀项目列表
 .sk_body_overflow{width: 800px; height: 275px; overflow: hidden; float: left;margin-bottom:30px;position: relative;}
-.sk_body {
+.sk_body {width: 200px*20; left: -800px; position: absolute;
      .sk_item{width: 200px;height: 275px; background: #FFFFFF; position: relative; overflow: hidden; float: left;
          a{height: 100%;display: block;
             &:hover img{opacity: 0.9;}

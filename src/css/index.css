@@ -261,7 +261,6 @@ header {
 }
 
 .form {
-  overflow: hidden;
   width: 550px;
 }
 
@@ -428,6 +427,62 @@ nav .treasure {
   display: block;
   float: left;
   margin-top: -9px;
+}
+
+.searchFloat {
+  position: fixed;
+  transition: height 0.5s;
+  height: 0;
+  overflow: hidden;
+  z-index: 999;
+  top: 0;
+  margin: 0;
+  padding: 6px 0 6px 400px;
+  width: 1349px;
+  background: #fff;
+  border-bottom: 2px solid #f10214;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.searchFloat .search_text {
+  background: #efefef;
+}
+.searchFloat .searchFloat_logo {
+  position: absolute;
+  width: 125px;
+  height: 40px;
+  left: 82px;
+  top: 2px;
+  background: url("https://misc.360buyimg.com/mtd/pc/index_2017/2.1.0/static/images/sprite.head.png") no-repeat -195px 0;
+}
+
+.hidden {
+  height: 35px;
+}
+
+.searchTips {
+  display: none;
+  position: absolute;
+  width: 495px;
+  background: #fff;
+  border: 1px #ccc solid;
+  top: 36px;
+  z-index: 999;
+  box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.searchTips a, .searchTips footer .bottom ul li span, footer .bottom ul li .searchTips span {
+  display: block;
+  line-height: 24px;
+  color: #666;
+  text-indent: 10px;
+}
+.searchTips a:hover, .searchTips footer .bottom ul li span:hover, footer .bottom ul li .searchTips span:hover {
+  background: #eee;
+}
+.searchTips i {
+  float: right;
+  margin-right: 8px;
+  color: #999;
+  font-style: normal;
 }
 
 .toolbar_wrap {

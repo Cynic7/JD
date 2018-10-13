@@ -1,0 +1,18 @@
+@charset "utf-8";
+@import "mixin";
+
+.xunBao .wrap{height: 520px;}
+.xunBao_box{ overflow: hidden;
+    width: 390px; height: 240px; margin: 0 10px 10px 0; background: #fff; float: left;position: relative;
+    figure{ filter: blur(3px);}
+    .mask{content:"";position: absolute; width: 390px; height: 100px; background: #000; opacity:0.4; top: 0;left: 0;}
+    h4{font-size: 18px; text-align: center; color: #fff; 
+        position: absolute; z-index: 20; top: 39px; width: 100%;
+        span{font-weight: normal;}
+    }
+    ul{@include boxM(360,110,10);li{float: left; margin: 0 5px;}}
+    
+    &:last-of-type{margin: 0px;}
+    &:nth-of-type(3){margin:0px}
+    img{transition:all 0.5s; &:hover{opacity: 0.8;}}
+}

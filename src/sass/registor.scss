@@ -1,0 +1,78 @@
+@charset "utf-8";
+html,body,h1,h2,h3,h4,h5,ul,li,div,p,ol,figure,section,aside,header,article,footer{margin: 0; padding: 0;}
+a{text-decoration: none;}
+#sure{
+    width: 480px;
+}
+.pro1{
+    background: url(../images/reg-icon.png) no-repeat 0 -200px;
+    display: inline-block;
+    width:24px; height: 24px;
+    text-align: center; color: white; line-height: 25px;
+    margin-left: 23px;
+}
+.page-header{padding-top: 24px;background: url("https://misc.360buyimg.com/user/reg/3.0.0/css/i/headbg.jpg") repeat-x bottom left;
+    small{font-size: 24px;color: #333; font-weight: normal;  transform: translateY(-9px); display: inline-block;}
+    .pull-right{
+        float: right; font-weight: normal; a{color: #e22; &:hover{text-decoration: underline;}}
+    }
+
+}
+
+//js:hover的时候 border-color变153
+form{
+   height: 496px; padding: 0 15px; margin: 0 auto;
+    .input-group{overflow: hidden;}
+    .input-group-addon{ float: left; width: 108px; height: 48px; text-align: center; box-sizing: border-box;font-size: 14px; line-height: 48px; border: 1px solid rgb(221, 221, 221); 
+            border-right: 0; color: #666; }
+    input:not(#check){width: 340px; height: 48px; padding: 14px 0 14px 20px; box-sizing: border-box; float: left;font-size: 14px;color:#666 ;border: 1px solid rgb(221, 221, 221);}
+    label{font-weight: 700; font-size: 14px; color: #333;}
+    .tishi{font-weight: normal; margin-top: 10px; float: left; width: 100%;}
+    .validation{
+              text-indent: 8px; margin-bottom: 20px; margin-top: 5px; color: #999;font-size: 13px;
+        }   
+    .redfont{color:red!important}
+}
+
+.top_por{
+    height: 105px; font-size: 12px; color: #3b4; display: flex;
+}
+.top_por p {
+     margin-top: 15px;
+}
+.line{
+    background: url(../images/reg-icon.png) no-repeat 0 -100px;
+    width: 124px; height: 10px; display: inline-block;
+    position: absolute; left: 0; top: 6px;
+}
+.padding_box{
+    padding-left: 125px; position: relative; color: #999; 
+}
+.padding_box .pro1{background-position: -45px -200px; color: #999;}
+
+.pas_repeat{
+    text-indent: 4px;
+}
+#check{
+    margin-bottom: 15px; margin-right: 5px; transform: translate(0,1.5px);
+}
+.form1{
+    width:470px; margin-bottom: 188px;margin-top: 80px;
+}
+footer{
+    padding: 30px 0;
+    border-top: 1px #eee solid;
+}
+footer .container {width: 998px; margin: 0 auto;}
+footer .container span{
+ text-align: center; border-right: 1px #aaa solid; font-size: 12px;
+}
+footer .container span a {
+    color: #999; padding: 0 15px; &:hover{text-decoration: underline;}
+}
+footer .container .last{
+    border: 0; width: 96px;
+}
+footer p{
+    text-align:  center;color: #999; margin-top: 40px;font-size: 12px;
+}

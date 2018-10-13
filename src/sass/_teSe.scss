@@ -1,0 +1,19 @@
+@charset "utf-8";
+@import "mixin";
+
+.teSe .wrap{
+    height: 385px; position: relative;
+    .teSe_overflow{overflow: hidden; position: relative; width: 1190px; height: 363px;}
+    .flex_floatbox{ display: flex; justify-content: space-between; float: left;width: 1190px;}
+    ul{ width: 1190px*5; position: absolute;overflow: hidden; left: -1190px;
+       
+        li{
+            background: #fff; width: 390px; height: 330px;
+        }
+        figure{transition: all 0.5s; @include boxM(350,250); &:hover{opacity: 0.8;}}
+    }
+    .bullet_wrap{
+        @include boxM(60,0,15);display: flex; position: absolute; bottom: 0; left: 0; right: 0; margin:auto;
+    }
+    .gonext,.goback{z-index: 15;}
+}

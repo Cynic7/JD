@@ -1,0 +1,24 @@
+@charset "utf-8";
+@import "mixin";
+
+.zhiBo .wrap{
+    height: 455px;
+    .item_box{
+        @include moban(); padding: 15px; box-sizing: border-box; height: 430px;
+        .item{
+                display: block;width: 170px;height: 190px;margin: 5px; float: left; position:relative;
+            .live_btn{background: url("https://misc.360buyimg.com/mtd/pc/index_2017/2.1.0/static/images/live_btn.png") no-repeat;  
+                    width: 44px; height: 44px; margin: -22px 0 0 -22px; position: absolute; left: 50%; top: 50%; z-index: 3;    background-size: 100% 100%;}
+            &:after{content:""; width: 100%;height: 100%; position: absolute; background: rgba(0, 0, 0, 0.3);
+                     top: 0; left: 0; z-index: 2; transition: background ease 0.2s;}
+            p{position: absolute;left: 0; bottom: 12%; font-size: 14px;line-height: 24px;padding: 0 10px; 
+                color: #fff; text-align: center; z-index: 4; width: 100%; box-sizing: border-box;}
+            &:hover:after{background: rgba(0, 0, 0, 0.15);}
+        }
+    }
+    #zhibo_center{
+        .item{width: 350px; height: 390px;}
+        .live_btn{width: 60px; height: 60px; margin: -30px 0 0 -30px;}
+        p span{font-size: 18px;}
+    }
+}

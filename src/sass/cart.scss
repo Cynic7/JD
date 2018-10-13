@@ -1,0 +1,109 @@
+@charset "utf-8";
+@import "mixin";
+
+@import "header";
+
+body{background: #fff;}
+footer{background: #eaeaea;padding-top: 1px;}
+
+header .wrap {    width: 1000px!important;
+    .logo{display: none;}
+}
+.hotwords,.shop,.camera,.shop_hoverbox {display: none!important;}
+
+.form{border: 2px solid #c91623; width: 321px; height: 24px;
+    .search_submit{margin: 0;background: #c91623;height: 24px; width: 49px;
+                    .fdj{line-height: 14px;    font-size: 17px;}
+              }
+    .search_text{ padding: 3px 5px;  height: 18px;
+                    line-height: 18px;
+                    width: 260px;}
+}
+
+ .search{ width: 990px; height: 97px; justify-content: space-between; align-content: center;align-items: center;
+        margin: 0 auto;
+        .logo2{width: 206px; height: 50px; display: block; background:url("https://misc.360buyimg.com/jdf/1.0.0/unit/global-header/5.0.0/i/jdlogo-201708-@1x.png") no-repeat;
+                text-align: right; line-height: 62px; font-size: 20px;
+        }
+    }
+
+.empty_cart_wrap{
+    @include boxM(990,298);   display: none; padding: 80px 0 120px; color: #333; padding-left: 388px; box-sizing: border-box; font-size: 14px;
+    background: url("https://misc.360buyimg.com/user/cart-otc/css/i/no-login-icon.png") no-repeat 300px 75px;
+    a{font-size:12px; color: #005ea7;}
+}
+.notEmpty_cart_wrap{
+    @include boxM(990,0);
+    h2:first-child{font-size: 16px; line-height: 26px; span{font-size: 14px;} margin-bottom: 10px;}
+    .cart_thead{
+        height: 32px;
+        line-height: 32px;
+        margin: 0 0 10px;
+        padding: 5px 0;
+        background: #f3f3f3;
+        border: 1px solid #e9e9e9;
+        border-top: 0;
+        position: relative;
+        label{width: 122px; margin-left: 11px; display: inline-block; input{transform: translateY(2px); margin-right: 8px;}}
+        span{display: inline-block;}
+        span:nth-of-type(1){margin-left: 5px;}
+        span:nth-of-type(2){margin-left: 444px;}
+        span:nth-of-type(3){margin-left: 77px;}
+        span:nth-of-type(4){margin-left: 100px;}
+        span:nth-of-type(5){margin-left: 40px;}
+    }
+    .main_list{margin-bottom: 20px;
+        li{padding: 15px 0;border:1px #e9e9e9 solid; border-top: 1px solid #c5c5c5;}
+        .li_checked{background: #fff4e8;}
+        div,p,figure{display: inline-block; vertical-align: top;}
+        figure{
+            border: 1px solid #eee;margin-right: 10px; margin-left: 10px;  img{width: 80px; height: 80px;}
+        }
+        .check_one{transform: translateY(5px); margin-left: 17px;}
+        .tit{
+            width: 215px; line-height: 20px;
+            a{color: #333; &:hover{color:#e4393c;}}
+        }
+        .guige{
+            width:130px; margin-left: 15px;
+        }
+        .price{
+            width: 138px; line-height: 20px; text-align: right;
+        }
+        .num{ position: relative; margin-left:59px;
+            input{color: #333;padding: 1px;text-align: center;width: 42px; height: 18px; border: 1px solid #cacbcb;}
+            button{padding: 1px;width: 16px; height: 22px;    border: 1px solid #cacbcb;background: #fff; margin: 0; position: absolute; top: 0px; left:-15px; cursor: pointer;}
+            .up{left: 45px;}
+            
+        }
+        .one_sum{width: 119px; text-align: right; font-weight: bold;}
+        .del{margin-left: 33px; cursor: pointer; &:hover{color: #e4393c;}}
+    }
+    
+    .account{ height: 50px;border:1px #e9e9e9 solid; margin-bottom: 50px;
+        &>div:first-of-type{float: left; line-height: 50px;
+                    .all{margin-left: 17px; transform: translateY(2px); margin-right: 5px;}
+                    label{margin-right: 10px;}
+                    a{color: #666; &:hover{color:#f30213;}  display:inline-block; margin-right: 10px;}
+                    a:last-of-type{font-weight: bold;}
+            }
+        &>div:last-of-type{float: right; position: relative;
+                b{font-weight: normal;padding-top: 8px;display: inline-block; color: #999; margin-right: 30px;
+                span{display: inline-block; padding: 0 3px; color: #e4393c; font-weight: 700; font-family: verdana;}
+               }
+               strong{font-weight: normal;color: #999;
+                   em{font-family: verdana; font-size: 16px; font-weight: 700; color: #e4393c; font-style: normal;}
+                   i{width: 12px; height: 18px; display: inline-block; background: url("https://misc.360buyimg.com/user/cart/css/i/price-tips.png") no-repeat; margin-left: 10px; margin-right: 120px;}
+                   
+               }
+               .jiesuan{display:inline-block;width: 96px; height: 52px; background: url("https://misc.360buyimg.com/user/cart/css/i/cart-submit-btn.png") no-repeat;
+                        position: absolute; top: 0; right: 0;
+               }
+            }
+    }
+}
+
+
+
+@import "footer";
+

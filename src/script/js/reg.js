@@ -1,0 +1,1 @@
+require(['reg_validata']);

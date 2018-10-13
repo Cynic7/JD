@@ -1,0 +1,22 @@
+@charset "utf-8";
+@import "mixin";
+
+.go_on{
+    .wrap_noH{
+        width: 1200px;margin: 0px auto 0;
+        li{
+            width: 230px;height: 305px;float: left;margin: 0 5px 10px 5px;
+            padding: 0 16px; box-sizing: border-box; background: #fff;
+            a{display: block;}
+            figure{@include boxM(170,170,30);margin-bottom: 20px;transition: all ease .5s; img{width: 170px; height: 170px;}}
+            p{height: 36px;font-size: 14px;line-height: 18px; overflow: hidden; 
+                text-overflow: ellipsis; word-break: break-all; color: #333;transition: all ease .5s;
+                display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;}
+            .price{color: #e33333;font-size:12px; text-align: center; margin-top: 10px;
+                span{font-size: 14px;}
+            }
+            a:hover figure{opacity: 0.8;}
+            a:hover p{color:#e33333;}
+        }
+    }
+}

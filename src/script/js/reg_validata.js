@@ -59,18 +59,14 @@ define(['config'],function(){
 		$.validator.setDefaults({
 		    /*添加校验成功后的执行函数--修改提示内容，并为正确提示信息添加新的样式(默认是valid)*/
 		    success: function(label){
-		        label.text('√').css({color:"green"}).addClass('valid');
+		        label.text('√').addClass('valid');
 		    }
 		});
 		
-//		console.log($('.form-control'));
-//		
-//		$('.form-control').on('input',function(){
-//			var lab=$('.tishi').eq($(this).index('.form-control'));
-//			if(lab.html()!="√"&&!lab.hasClass('valid')){
-//				lab.css({color:"red",fontWeight:"normal"});
-//			}
-//		});
+		$('.form-control').on('focus',function(){
+			var lab=$('.tishi').eq($(this).index('.form-control'));
+				lab.addClass('redfont');
+		});
 		
 	})
 })

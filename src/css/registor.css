@@ -1,12 +1,15 @@
 html, body, h1, h2, h3, h4, h5, ul, li, div, p, ol, figure, section, aside, header, article, footer {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 #sure {
-  width: 480px; }
+  width: 480px;
+}
 
 .pro1 {
   background: url(../images/reg-icon.png) no-repeat 0 -200px;
@@ -16,77 +19,100 @@ a {
   text-align: center;
   color: white;
   line-height: 25px;
-  margin-left: 23px; }
+  margin-left: 23px;
+}
 
 .page-header {
   padding-top: 24px;
-  background: url("https://misc.360buyimg.com/user/reg/3.0.0/css/i/headbg.jpg") repeat-x bottom left; }
-  .page-header small {
-    font-size: 24px;
-    color: #333;
-    font-weight: normal;
-    transform: translateY(-9px);
-    display: inline-block; }
-  .page-header .pull-right {
-    float: right;
-    font-weight: normal; }
-    .page-header .pull-right a {
-      color: #e22; }
-      .page-header .pull-right a:hover {
-        text-decoration: underline; }
+  background: url("https://misc.360buyimg.com/user/reg/3.0.0/css/i/headbg.jpg") repeat-x bottom left;
+}
+.page-header small {
+  font-size: 24px;
+  color: #333;
+  font-weight: normal;
+  transform: translateY(-9px);
+  display: inline-block;
+}
+.page-header .pull-right {
+  float: right;
+  font-weight: normal;
+}
+.page-header .pull-right a {
+  color: #e22;
+}
+.page-header .pull-right a:hover {
+  text-decoration: underline;
+}
 
 form {
   height: 496px;
   padding: 0 15px;
-  margin: 0 auto; }
-  form .input-group {
-    overflow: hidden; }
-  form .input-group-addon {
-    float: left;
-    width: 108px;
-    height: 48px;
-    text-align: center;
-    box-sizing: border-box;
-    font-size: 14px;
-    line-height: 48px;
-    border: 1px solid #dddddd;
-    border-right: 0;
-    color: #666; }
-  form input:not(#check) {
-    width: 340px;
-    height: 48px;
-    padding: 14px 0 14px 20px;
-    box-sizing: border-box;
-    float: left;
-    font-size: 14px;
-    color: #666;
-    border: 1px solid #dddddd; }
-  form label {
-    font-weight: 700;
-    font-size: 14px;
-    color: #333; }
-  form .tishi {
-    font-weight: normal;
-    margin-top: 10px;
-    float: left;
-    width: 100%; }
-  form .validation {
-    text-indent: 8px;
-    margin-bottom: 20px;
-    margin-top: 5px;
-    color: #999;
-    font-size: 13px; }
-  form .redfont {
-    color: red !important; }
+  margin: 0 auto;
+}
+form .input-group {
+  overflow: hidden;
+}
+form .input-group-addon {
+  float: left;
+  width: 108px;
+  height: 48px;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 48px;
+  border: 1px solid #dddddd;
+  border-right: 0;
+  color: #666;
+}
+form input:not(#check) {
+  width: 340px;
+  height: 48px;
+  padding: 14px 0 14px 20px;
+  box-sizing: border-box;
+  float: left;
+  font-size: 14px;
+  color: #666;
+  border: 1px solid #dddddd;
+}
+form label {
+  font-weight: 700;
+  font-size: 14px;
+  color: #333;
+}
+form .tishi {
+  font-weight: normal;
+  margin-top: 10px;
+  float: left;
+  width: 100%;
+}
+form .validation {
+  height: 25px;
+  text-indent: 8px;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  color: #999;
+  font-size: 13px;
+  padding-top: 5px;
+}
+form .redfont {
+  color: #f10214;
+}
+form .tishi.valid {
+  color: green !important;
+  font-weight: 800;
+  font-size: 15px;
+}
 
 .top_por {
   height: 105px;
   font-size: 12px;
   color: #3b4;
-  display: flex; }
+  display: flex;
+}
 
 .top_por p {
-  margin-top: 15px; }
+  margin-top: 15px;
+}
 
 .line {
   background: url(../images/reg-icon.png) no-repeat 0 -100px;
@@ -95,55 +121,70 @@ form {
   display: inline-block;
   position: absolute;
   left: 0;
-  top: 6px; }
+  top: 6px;
+}
 
 .padding_box {
   padding-left: 125px;
   position: relative;
-  color: #999; }
+  color: #999;
+}
 
 .padding_box .pro1 {
   background-position: -45px -200px;
-  color: #999; }
+  color: #999;
+}
 
 .pas_repeat {
-  text-indent: 4px; }
+  text-indent: 4px;
+}
 
 #check {
   margin-bottom: 15px;
   margin-right: 5px;
-  transform: translate(0, 1.5px); }
+  transform: translate(0, 1.5px);
+}
 
 .form1 {
   width: 470px;
   margin-bottom: 188px;
-  margin-top: 80px; }
+  margin-top: 80px;
+}
 
 footer {
   padding: 30px 0;
-  border-top: 1px #eee solid; }
+  border-top: 1px #eee solid;
+}
 
 footer .container {
   width: 998px;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 footer .container span {
   text-align: center;
   border-right: 1px #aaa solid;
-  font-size: 12px; }
+  font-size: 12px;
+}
 
 footer .container span a {
   color: #999;
-  padding: 0 15px; }
-  footer .container span a:hover {
-    text-decoration: underline; }
+  padding: 0 15px;
+}
+footer .container span a:hover {
+  text-decoration: underline;
+}
 
 footer .container .last {
   border: 0;
-  width: 96px; }
+  width: 96px;
+}
 
 footer p {
   text-align: center;
   color: #999;
   margin-top: 40px;
-  font-size: 12px; }
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=registor.css.map */

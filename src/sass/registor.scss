@@ -28,10 +28,11 @@ form{
     input:not(#check){width: 340px; height: 48px; padding: 14px 0 14px 20px; box-sizing: border-box; float: left;font-size: 14px;color:#666 ;border: 1px solid rgb(221, 221, 221);}
     label{font-weight: 700; font-size: 14px; color: #333;}
     .tishi{font-weight: normal; margin-top: 10px; float: left; width: 100%;}
-    .validation{
-              text-indent: 8px; margin-bottom: 20px; margin-top: 5px; color: #999;font-size: 13px;
+    .validation{ height: 25px;
+              text-indent: 8px; margin-bottom: 15px; margin-top: 5px; color: #999;font-size: 13px; padding-top: 5px;
         }   
-    .redfont{color:red!important}
+    .redfont{color:#f10214;}
+    .tishi.valid{color: green!important; font-weight: 800; font-size: 15px;}
 }
 
 .top_por{

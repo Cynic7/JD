@@ -153,4 +153,19 @@ nav{ background: #221c63; margin-top: 20px; margin-left: 0; width: 100%;
     }
 }
 
+//遮罩和模态框
+.mask{width: 100%; height: 1500px; background:rgba(0,0,0,.5);position: absolute; top: 0; left: 0; z-index: 999;display: none;
+    .modalbox{background:#fff; padding:0 20px 57px; position: absolute; width: 550px; height: 150px;}
+    .clear{float: right; margin-top: 35px;}
+    .modalbox_logo{display:block; height: 42px;padding-top:20px;background: url("https://misc.360buyimg.com/jdf/1.0.0/unit/global-header/5.0.0/i/jdlogo-201708-@1x.png") no-repeat 0 20px; }
+    i{display:inline-block;width: 25px; height: 25px; background: url("https://misc.360buyimg.com/user/cart/widget/addtocart-201608/i/addtocart-icons.png") no-repeat ;transform: translateY(5px); margin: 13px 10px 0 160px;}
+    span{font-size: 18px; line-height: 25px; font-weight: 400;color: #71b247;}
+    button{display: block;width: 136px; padding:0 30px;background: #e4393c;border: 1px solid #e4393c;color: #fff; height: 34px; line-height: 36px;
+         font-size: 16px;vertical-align: middle;box-sizing: content-box; cursor: pointer;position: relative; padding-left: 6px;float: left;
+         b{display: inline-block; width: 10px; height: 20px; background: url("https://misc.360buyimg.com/user/cart/widget/addtocart-201608/i/addtocart-icons.png") no-repeat -20px -81px;
+            position: absolute; top: 8px; right: 21px;}   
+      }
+    .close{background:#fff;  color: #e4393c; padding: 0 10px; margin-right: 15px;}
+}
+
 

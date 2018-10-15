@@ -340,10 +340,6 @@ header {
   margin-left: 30px;
 }
 
-.shop_hoverbox:hover .empty_content {
-  display: block;
-}
-
 .shop_hoverbox:hover .shop {
   border-bottom: 0;
   border-color: #ccc;
@@ -357,7 +353,7 @@ header {
   line-height: 33px;
   border: 1px solid #e3e4e5;
   position: relative;
-  z-index: 2;
+  z-index: 200;
 }
 .shop a, .shop footer .bottom ul li span, footer .bottom ul li .shop span {
   color: #f10214;
@@ -374,7 +370,7 @@ header {
   transform: translateY(-5px);
 }
 
-.empty_content {
+.empty_content, .full_content {
   display: none;
   width: 308px;
   height: 49px;
@@ -390,12 +386,77 @@ header {
   right: 177px;
   top: 33px;
 }
-.empty_content i {
+.empty_content i, .full_content i {
   display: inline-block;
   background: url("https://img11.360buyimg.com/uba/jfs/t3571/299/131233948/1117/a1196554/58004d6dN2927f0f7.png") no-repeat;
   width: 56px;
   height: 49px;
   vertical-align: middle;
+}
+
+.full_content {
+  padding: 6px 8px;
+  height: auto !important;
+  z-index: 100 !important;
+  line-height: 1.5;
+}
+.full_content h4 {
+  width: 292px;
+  height: 25px;
+  text-align: left;
+}
+.full_content ul {
+  overflow: auto;
+  max-height: 350px;
+}
+.full_content li {
+  height: 68px;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+.full_content li:hover {
+  background: #eee;
+}
+.full_content li figure {
+  float: left;
+  border: 1px #eee solid;
+}
+.full_content li figure img {
+  width: 50px;
+  height: 50px;
+}
+.full_content li p {
+  float: left;
+  width: 140px;
+  text-align: left;
+  height: 52px;
+  overflow: hidden;
+  margin-left: 8px;
+}
+.full_content li p a, .full_content footer .bottom ul li p span, footer .bottom ul .full_content li p span {
+  color: #999;
+}
+.full_content li b {
+  float: right;
+  margin-right: 10px;
+}
+.full_content .goshop {
+  height: 34px;
+}
+.full_content .goshop a, .full_content .goshop footer .bottom ul li span, footer .bottom ul li .full_content .goshop span {
+  width: 60px;
+  height: 30px;
+  text-align: center;
+  display: block;
+  float: right;
+  color: #fff;
+  background: #e4393c;
+  font-weight: 700;
+  line-height: 30px;
+  border-radius: 3px;
+  margin-top: 5px;
+  margin-right: 5px;
+  padding: 0 8px;
 }
 
 nav {
@@ -432,7 +493,6 @@ nav .treasure {
   position: fixed;
   transition: height 0.5s;
   height: 0;
-  overflow: hidden;
   z-index: 999;
   top: 0;
   margin: 0;
@@ -758,7 +818,7 @@ footer {
 .search .shop a, .search .shop footer .bottom ul li span, footer .bottom ul li .search .shop span {
   color: #666;
 }
-.search .empty_content {
+.search .empty_content, .search .full_content {
   top: 58px;
   right: 48px;
 }
@@ -1184,6 +1244,80 @@ nav ul li a, nav footer .bottom ul li span, footer .bottom nav ul li span {
   color: #999;
   white-space: pre;
   margin-left: 77px;
+}
+
+.mask {
+  width: 100%;
+  height: 1500px;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: none;
+}
+.mask .modalbox {
+  background: #fff;
+  padding: 0 20px 57px;
+  position: absolute;
+  width: 550px;
+  height: 150px;
+}
+.mask .clear {
+  float: right;
+  margin-top: 35px;
+}
+.mask .modalbox_logo {
+  display: block;
+  height: 42px;
+  padding-top: 20px;
+  background: url("https://misc.360buyimg.com/jdf/1.0.0/unit/global-header/5.0.0/i/jdlogo-201708-@1x.png") no-repeat 0 20px;
+}
+.mask i {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: url("https://misc.360buyimg.com/user/cart/widget/addtocart-201608/i/addtocart-icons.png") no-repeat;
+  transform: translateY(5px);
+  margin: 13px 10px 0 160px;
+}
+.mask span {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #71b247;
+}
+.mask button {
+  display: block;
+  width: 136px;
+  padding: 0 30px;
+  background: #e4393c;
+  border: 1px solid #e4393c;
+  color: #fff;
+  height: 34px;
+  line-height: 36px;
+  font-size: 16px;
+  vertical-align: middle;
+  box-sizing: content-box;
+  cursor: pointer;
+  position: relative;
+  padding-left: 6px;
+  float: left;
+}
+.mask button b {
+  display: inline-block;
+  width: 10px;
+  height: 20px;
+  background: url("https://misc.360buyimg.com/user/cart/widget/addtocart-201608/i/addtocart-icons.png") no-repeat -20px -81px;
+  position: absolute;
+  top: 8px;
+  right: 21px;
+}
+.mask .close {
+  background: #fff;
+  color: #e4393c;
+  padding: 0 10px;
+  margin-right: 15px;
 }
 
 /*# sourceMappingURL=details.css.map */

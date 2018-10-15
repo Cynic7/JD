@@ -45,7 +45,7 @@ a{text-decoration: none;}
     .glyphicon{display: block; position: absolute; width: 38px; height: 38px;z-index: 1; border-right: 1px solid #bdbdbd;left: 1px; top: 1px; background: url("https://misc.360buyimg.com/user/passport/1.0.0/widget/login-form-2018-0827/i/pwd-icons-new.png") no-repeat;}
     .glyphicon-lock{background-position: -48px 0;}
     .input-group{position: relative;}
-    input:not(#submit){width: 251px; height: 16px; padding: 10px 0 10px 50px; line-height: 16px; font-size: 14px; position: relative;}
+    input:not(#submit){width: 251px; height: 18px; padding: 10px 0 10px 50px; line-height: 18px; font-size: 14px; position: relative;border: 1px solid #bdbdbd;}
 }
 .form-group{
     margin-bottom: 23px; overflow: hidden;

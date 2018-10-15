@@ -340,10 +340,6 @@ header {
   margin-left: 30px;
 }
 
-.shop_hoverbox:hover .empty_content {
-  display: block;
-}
-
 .shop_hoverbox:hover .shop {
   border-bottom: 0;
   border-color: #ccc;
@@ -357,7 +353,7 @@ header {
   line-height: 33px;
   border: 1px solid #e3e4e5;
   position: relative;
-  z-index: 2;
+  z-index: 200;
 }
 .shop a, .shop footer .bottom ul li span, footer .bottom ul li .shop span {
   color: #f10214;
@@ -374,7 +370,7 @@ header {
   transform: translateY(-5px);
 }
 
-.empty_content {
+.empty_content, .full_content {
   display: none;
   width: 308px;
   height: 49px;
@@ -390,12 +386,77 @@ header {
   right: 177px;
   top: 33px;
 }
-.empty_content i {
+.empty_content i, .full_content i {
   display: inline-block;
   background: url("https://img11.360buyimg.com/uba/jfs/t3571/299/131233948/1117/a1196554/58004d6dN2927f0f7.png") no-repeat;
   width: 56px;
   height: 49px;
   vertical-align: middle;
+}
+
+.full_content {
+  padding: 6px 8px;
+  height: auto !important;
+  z-index: 100 !important;
+  line-height: 1.5;
+}
+.full_content h4 {
+  width: 292px;
+  height: 25px;
+  text-align: left;
+}
+.full_content ul {
+  overflow: auto;
+  max-height: 350px;
+}
+.full_content li {
+  height: 68px;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+.full_content li:hover {
+  background: #eee;
+}
+.full_content li figure {
+  float: left;
+  border: 1px #eee solid;
+}
+.full_content li figure img {
+  width: 50px;
+  height: 50px;
+}
+.full_content li p {
+  float: left;
+  width: 140px;
+  text-align: left;
+  height: 52px;
+  overflow: hidden;
+  margin-left: 8px;
+}
+.full_content li p a, .full_content footer .bottom ul li p span, footer .bottom ul .full_content li p span {
+  color: #999;
+}
+.full_content li b {
+  float: right;
+  margin-right: 10px;
+}
+.full_content .goshop {
+  height: 34px;
+}
+.full_content .goshop a, .full_content .goshop footer .bottom ul li span, footer .bottom ul li .full_content .goshop span {
+  width: 60px;
+  height: 30px;
+  text-align: center;
+  display: block;
+  float: right;
+  color: #fff;
+  background: #e4393c;
+  font-weight: 700;
+  line-height: 30px;
+  border-radius: 3px;
+  margin-top: 5px;
+  margin-right: 5px;
+  padding: 0 8px;
 }
 
 nav {
@@ -432,7 +493,6 @@ nav .treasure {
   position: fixed;
   transition: height 0.5s;
   height: 0;
-  overflow: hidden;
   z-index: 999;
   top: 0;
   margin: 0;
@@ -524,6 +584,7 @@ header .wrap .logo {
   height: 18px;
   line-height: 18px;
   width: 260px;
+  padding-bottom: 0;
 }
 
 .search {
@@ -546,10 +607,10 @@ header .wrap .logo {
 
 .empty_cart_wrap {
   display: block;
+  display: block;
   width: 990px;
   height: 298px;
   margin: 0px auto 0;
-  display: none;
   padding: 80px 0 120px;
   color: #333;
   padding-left: 388px;
@@ -563,6 +624,7 @@ header .wrap .logo {
 }
 
 .notEmpty_cart_wrap {
+  display: none;
   display: block;
   width: 990px;
   margin: 0px auto 0;
@@ -771,6 +833,61 @@ header .wrap .logo {
   position: absolute;
   top: 0;
   right: 0;
+}
+.notEmpty_cart_wrap .w h3 {
+  text-align: center;
+}
+.notEmpty_cart_wrap .w h3 i {
+  display: inline-block;
+  margin-right: 5px;
+  transform: translateY(2px);
+  width: 18px;
+  height: 18px;
+  background: url("https://misc.360buyimg.com/user/cart/css/i/cart-icons-201809.png") no-repeat -62px -198px;
+}
+.notEmpty_cart_wrap .w .whatlike {
+  text-align: center;
+  color: #999;
+  line-height: 25px;
+}
+.notEmpty_cart_wrap .w ul {
+  border: 1px solid #e5e5e5;
+  border-top: 2px solid #aaa;
+  margin-top: 15px;
+}
+.notEmpty_cart_wrap .w ul li {
+  float: left;
+  width: 25%;
+  padding: 25px;
+  box-sizing: border-box;
+}
+.notEmpty_cart_wrap .w ul li:hover a, .notEmpty_cart_wrap .w footer .bottom ul li:hover span, footer .bottom .notEmpty_cart_wrap .w ul li:hover span {
+  color: #E33333;
+}
+.notEmpty_cart_wrap .w ul li figure {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+.notEmpty_cart_wrap .w ul li figure img {
+  width: 150px;
+  height: 150px;
+}
+.notEmpty_cart_wrap .w ul li .helpyou_price {
+  line-height: 25px;
+  color: #e4393c;
+  font-family: verdana;
+}
+.notEmpty_cart_wrap .w ul li a, .notEmpty_cart_wrap .w footer .bottom ul li span, footer .bottom .notEmpty_cart_wrap .w ul li span {
+  color: #333;
+}
+.notEmpty_cart_wrap .w ul li .helpyou_common {
+  color: #666;
+}
+.notEmpty_cart_wrap .w ul li .helpyou_tit {
+  height: 38px;
+  overflow: hidden;
 }
 
 footer {

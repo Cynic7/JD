@@ -126,11 +126,12 @@ a {
 }
 #form input:not(#submit) {
   width: 251px;
-  height: 16px;
+  height: 18px;
   padding: 10px 0 10px 50px;
-  line-height: 16px;
+  line-height: 18px;
   font-size: 14px;
   position: relative;
+  border: 1px solid #bdbdbd;
 }
 
 .form-group {

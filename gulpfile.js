@@ -2,6 +2,9 @@ var gulp=require('gulp');
 var minifyhtml=require('gulp-minify-html');
 var minifycss=require('gulp-minify-css');
 var gulpsass=require('gulp-sass');
+var uglifyJS=require('gulp-uglify');
+//var babel=require('gulp-babel');
+var uglify=require('gulp-uglify');
 var concat=require('gulp-concat');
 var rename=require('gulp-rename');
 var imagemin=require('gulp-imagemin');
@@ -55,3 +58,12 @@ gulp.task('default',function(){
 //gulp.task('sass',function(){
 //	gulp.watch(['src/css/*.css'],['sassBY']);
 //});
+
+
+//压缩JS   es6会出问题
+gulp.task('yasuoJS',function(){
+	gulp.src('src/script/js/header.js')
+	.pipe(uglify())
+	.pipe(gulp.dest('dist/script/js/'));
+});
+

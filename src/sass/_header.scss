@@ -123,10 +123,10 @@ header{width: 100%; margin: 0 auto;}
 
 //购物车
 .shop_hoverbox{width: 191px; height: 34px; margin-left: 30px;}
-.shop_hoverbox:hover .empty_content{display: block;}
+
 .shop_hoverbox:hover .shop{border-bottom: 0;border-color:#ccc;}
 .shop{width: 190px; height: 33px; background: #fff; text-align: center;line-height: 33px;
-        border: 1px solid #e3e4e5;position:relative; z-index: 2;
+        border: 1px solid #e3e4e5;position:relative; z-index: 200;
         
      a{color: #f10214;}
      .sum{display: inline-block;width: 14px; height: 14px; border-radius: 50%; background: #f10215; color: #fff;line-height: 14px; margin-top: -5px; transform: translateY(-5px);}
@@ -149,7 +149,20 @@ header{width: 100%; margin: 0 auto;}
                 i{display: inline-block; background: url("https://img11.360buyimg.com/uba/jfs/t3571/299/131233948/1117/a1196554/58004d6dN2927f0f7.png") no-repeat; width: 56px; height: 49px; vertical-align: middle;}
        }
      
-
+.full_content{
+    @extend .empty_content; padding: 6px 8px; height: auto!important; z-index: 100!important;line-height: 1.5;
+    h4{width: 292px; height: 25px;  text-align: left;}
+    ul{overflow: auto;max-height:350px;}
+    li{height: 68px;padding-top:10px;padding-left:5px;  &:hover{background: #eee;}
+        figure{float: left; border:1px #eee solid; img{width: 50px; height: 50px;}}
+        p{float: left;width: 140px;text-align: left;height: 52px; overflow: hidden; margin-left: 8px; a{color: #999;}}
+        b{float: right; margin-right: 10px;}
+    }
+    .goshop{
+        height: 34px;
+        a{width: 60px; height: 30px; text-align: center; display: block; float: right; color: #fff; background: #e4393c;font-weight: 700; line-height: 30px; border-radius: 3px; margin-top: 5px; margin-right: 5px; padding: 0 8px;}
+    }
+}
 
 //底部黑色导航
 nav {margin-left: 295px; margin-top: 20px;height: 40px; width: 1054px;
@@ -167,7 +180,6 @@ nav {margin-left: 295px; margin-top: 20px;height: 40px; width: 1054px;
     position:fixed;
     transition: height 0.5s;
     height: 0;
-    overflow: hidden;
     z-index: 999;
     top:0;
     margin:0;
@@ -181,7 +193,6 @@ nav {margin-left: 295px; margin-top: 20px;height: 40px; width: 1054px;
     
 }
 .hidden{height: 35px;}
-
 
 .searchTips{display: none;
     position: absolute;width: 495px; background: #fff;border: 1px #ccc solid; top: 36px;z-index: 999;box-shadow: 1px 2px 1px rgba(0,0,0,.2);

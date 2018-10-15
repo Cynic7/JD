@@ -17,7 +17,7 @@ header .wrap {    width: 1000px!important;
               }
     .search_text{ padding: 3px 5px;  height: 18px;
                     line-height: 18px;
-                    width: 260px;}
+                    width: 260px; padding-bottom: 0;}
 }
 
  .search{ width: 990px; height: 97px; justify-content: space-between; align-content: center;align-items: center;
@@ -27,12 +27,12 @@ header .wrap {    width: 1000px!important;
         }
     }
 
-.empty_cart_wrap{
-    @include boxM(990,298);   display: none; padding: 80px 0 120px; color: #333; padding-left: 388px; box-sizing: border-box; font-size: 14px;
+.empty_cart_wrap{display: block;
+    @include boxM(990,298);padding: 80px 0 120px; color: #333; padding-left: 388px; box-sizing: border-box; font-size: 14px;
     background: url("https://misc.360buyimg.com/user/cart-otc/css/i/no-login-icon.png") no-repeat 300px 75px;
     a{font-size:12px; color: #005ea7;}
 }
-.notEmpty_cart_wrap{
+.notEmpty_cart_wrap{display: none;
     @include boxM(990,0);
     h2:first-child{font-size: 16px; line-height: 26px; span{font-size: 14px;} margin-bottom: 10px;}
     .cart_thead{
@@ -100,6 +100,21 @@ header .wrap {    width: 1000px!important;
                         position: absolute; top: 0; right: 0;
                }
             }
+    }
+    
+    .w{
+       h3{text-align: center; i{display: inline-block;margin-right:5px; transform: translateY(2px); width: 18px; height: 18px; background: url("https://misc.360buyimg.com/user/cart/css/i/cart-icons-201809.png") no-repeat -62px -198px;}}
+       .whatlike{text-align: center; color: #999; line-height: 25px;}
+        ul{border: 1px solid #e5e5e5;border-top: 2px solid #aaa;margin-top: 15px;
+        
+            li{float: left;width: 25%; padding: 25px; box-sizing: border-box; &:hover a{color: #E33333;}
+                figure{width: 150px; height: 150px; margin: 0 auto; margin-bottom: 15px; img{width: 150px; height: 150px;}}
+                .helpyou_price{line-height: 25px; color: #e4393c;font-family: verdana;}
+                a{color: #333;}
+                .helpyou_common{color: #666;}
+                .helpyou_tit{height: 38px; overflow: hidden;}
+            }
+        }
     }
 }
 
